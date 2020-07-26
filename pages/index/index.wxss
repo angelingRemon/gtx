@@ -1,21 +1,106 @@
 /**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.indexBanner .screen-swiper{
+  height:750rpx;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.indexBanner image{
+  height:750rpx;
+  width:100%;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.indexMenuMain{
+  padding:0 30rpx;
+  position:relative;
+  z-index:999;
 }
-
-.usermotto {
-  margin-top: 200px;
+.indexMenuBox{
+  background:#fff;
+  border-radius:10rpx;
+  margin-top:-160rpx;
+  box-shadow:0 20rpx 20rpx #f1f1f1;
+  padding:20rpx;
+  box-sizing:border-box;
+  overflow:hidden;
+}
+.indexMenuBox .left{
+  width:360rpx;
+  height:348rpx;
+  background:#e23308;
+  float:left;
+  position:relative;
+}
+.indexMenuBox .left image{
+  width:100%;
+  height:100% !important;
+}
+.indexMenuBox .left view.title{
+  position:absolute;
+  left:40rpx;
+  bottom:50rpx;
+  color:#fff;
+  font-size:46rpx;
+  font-weight:bold;
+}
+.indexMenuBox .vanIcon{
+  margin-right:10rpx;
+  font-size:60rpx;
+}
+.indexMenuBox .right{
+  width:278rpx;
+  height:350rpx;
+  float:right;
+}
+.indexMenuBox .right .rightTop{
+  width:100%;
+  height:165rpx;
+  background:#e79032;
+  position:relative;
+}
+.indexMenuBox .right .rightTop image{
+  width:100%;
+  height:100% !important;
+}
+.indexMenuBox .right .rightTop view.title{
+  position:absolute;
+  left:20rpx;
+  bottom:30rpx;
+  color:#fff;
+  font-size:46rpx;
+  font-weight:bold;
+}
+.indexMenuBox .right .rightSub{
+  width:100%;
+  height:165rpx;
+  margin-top:20rpx;
+  background:#0e69e4;
+  position:relative;
+}
+.indexMenuBox .right .rightSub image{
+  width:100%;
+  height:100% !important;
+}
+.indexMenuBox .right .rightSub view.title{
+  position:absolute;
+  left:20rpx;
+  bottom:30rpx;
+  color:#fff;
+  font-size:46rpx;
+  font-weight:bold;
+}
+.indexRecommendMain{
+  padding:30rpx;
+}
+.indexRecommendBox{
+  background:#fff;
+  box-shadow:0 20rpx 20rpx #f1f1f1;
+  border-radius:10rpx;
+  padding:20rpx;
+}
+.indexRecommendBox .title{
+  padding-top:16rpx;
+  font-size:36rpx;
+  font-weight:bold;
+}
+.indexRecommendBox .title .iconGift{
+  font-size:42rpx;
+  margin-right:10rpx;
+  color:#e23308;
 }

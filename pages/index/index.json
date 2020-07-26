@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "navigationStyle":"custom",
+  "usingComponents": {
+    "van-icon": "@vant/weapp/icon/index",
+    "van-rate": "@vant/weapp/rate/index"
+  }
 }

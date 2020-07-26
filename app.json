@@ -1,13 +1,39 @@
 {
   "pages":[
-    "pages/index/index"
+    "pages/index/index",
+    "pages/classify/classify",
+    "pages/mine/mine"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#e23308",
     "navigationBarTitleText": "告天下",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"white"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#2b2b2c",
+    "selectedColor": "#e23308",
+    "list": [
+      {
+        "selectedIconPath": "assets/images/tabbar/homeActive.png",
+        "iconPath": "assets/images/tabbar/home.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "assets/images/tabbar/moneyActive.png",
+        "iconPath": "assets/images/tabbar/money.png",
+        "pagePath": "pages/classify/classify",
+        "text": "分类"
+      },
+      {
+        "selectedIconPath": "assets/images/tabbar/walletActive.png",
+        "iconPath": "assets/images/tabbar/wallet.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  }
 }
