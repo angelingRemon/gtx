@@ -2,7 +2,10 @@
   "pages":[
     "pages/index/index",
     "pages/classify/classify",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/designMode/designMode",
+    "pages/makeMode/makeMode",
+    "pages/serviceMode/serviceMode"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -21,12 +24,6 @@
         "iconPath": "assets/images/tabbar/home.png",
         "pagePath": "pages/index/index",
         "text": "首页"
-      },
-      {
-        "selectedIconPath": "assets/images/tabbar/moneyActive.png",
-        "iconPath": "assets/images/tabbar/money.png",
-        "pagePath": "pages/classify/classify",
-        "text": "分类"
       },
       {
         "selectedIconPath": "assets/images/tabbar/walletActive.png",

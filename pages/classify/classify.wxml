@@ -1,12 +1,12 @@
+<van-search value="{{ value }}" placeholder="请输入搜索关键词(例如：喷绘布)" background="#f1f1f1" use-action-slot bind:change="onChange" bind:search="onSearch">
+	<view slot="action" bind:tap="onClick">搜索</view>
+</van-search>
 <view class="main">
-    <view class="categroy-left">
-        <view wx:for="{{category}}" wx:key="index" data-id="{{item.id}}" data-index="{{index}}"
-            bindtap="switchTab"
-            class="cate-list {{curIndex === index?'on':''}}">{{item.name}}</view>
-    </view>
-
-    <scroll-view class="categroy-right" scroll-y="{{isScroll}}" scroll-into-view="{{toView}}" scroll-with-animation="true">
-         <!-- <block wx:for="{{detail}}" wx:for-index wx:key="idx">
+	<view class="categroy-left solid-right">
+		<view wx:for="{{category}}" wx:key="index" data-id="{{item.id}}" data-index="{{index}}" bindtap="switchTab" class="cate-list {{curIndex === index?'on':''}}">{{item.name}}</view>
+	</view>
+	<scroll-view class="categroy-right" scroll-y="{{isScroll}}" scroll-into-view="{{toView}}" scroll-with-animation="true">
+		<!-- <block wx:for="{{detail}}" wx:for-index wx:key="idx">
             <view id="{{item.id}}" class="cate-box">
                 <view class="cate-banner">
                     <image src="../../../image/c1.png"></image>
@@ -24,59 +24,59 @@
                 </view>
             </view>
         </block>  -->
-       <block>
-            <view id="guowei" class="cate-box">
-                <view class="cate-banner">
-                    <image src="../../assets/images/classifyBannerImg.jpg"></image>
-                </view>
-                <view class="cate-title">
-                    <text>电脑耗材</text>
-                </view>
-                <view class="product">
-                    <view class="product-list">
-                        <navigator url="../list/list">
-                            <image src="../../assets/images/classifyItemBg.png"></image>
-                            <view class="classname"><text>梨花带雨 3个</text></view>
-                        </navigator>
-                    </view>
-                </view>
-            </view>
-        </block>
-        <block>
-            <view id="shucai" class="cate-box">
-                <view class="cate-banner">
-                    <image src="../../assets/images/classifyBannerImg.jpg"></image>
-                </view>
-                <view class="cate-title">
-                    <text>数码产品</text>
-                </view>
-                <view class="product">
-                    <view class="product-list">
-                        <navigator url="../list/list">
-                            <image src="../../assets/images/classifyItemBg.png"></image>
-                            <view class="classname"><text>梨花带雨 3个</text></view>
-                        </navigator>
-                    </view>
-                     <view class="product-list">
-                        <navigator url="../list/list">
-                            <image src="../../assets/images/classifyItemBg.png"></image>
-                            <view class="classname"><text>梨花带雨 3个</text></view>
-                        </navigator>
-                    </view>
-                     <view class="product-list">
-                        <navigator url="../list/list">
-                            <image src="../../assets/images/classifyItemBg.png"></image>
-                            <view class="classname"><text>梨花带雨 3个</text></view>
-                        </navigator>
-                    </view>
-                     <view class="product-list">
-                        <navigator url="../list/list">
-                            <image src="../../assets/images/classifyItemBg.png"></image>
-                            <view class="classname"><text>梨花带雨 3个</text></view>
-                        </navigator>
-                    </view>
-                </view>
-            </view>
-        </block> 
-    </scroll-view>
+		<block>
+			<view id="guowei" class="cate-box">
+				<view class="cate-banner">
+					<image src="../../assets/images/classifyBannerImg.jpg"></image>
+				</view>
+				<view class="cate-title">
+					<text>电脑耗材</text>
+				</view>
+				<view class="product">
+					<view class="product-list">
+						<navigator url="../list/list">
+							<image src="../../assets/images/classifyItemBg.png"></image>
+							<view class="classname"><text>梨花带雨 3个</text></view>
+						</navigator>
+					</view>
+				</view>
+			</view>
+		</block>
+		<block>
+			<view id="shucai" class="cate-box">
+				<view class="cate-banner">
+					<image src="../../assets/images/classifyBannerImg.jpg"></image>
+				</view>
+				<view class="cate-title">
+					<text>数码产品</text>
+				</view>
+				<view class="product">
+					<view class="product-list">
+						<navigator url="../list/list">
+							<image src="../../assets/images/classifyItemBg.png"></image>
+							<view class="classname"><text>梨花带雨 3个</text></view>
+						</navigator>
+					</view>
+					<view class="product-list">
+						<navigator url="../list/list">
+							<image src="../../assets/images/classifyItemBg.png"></image>
+							<view class="classname"><text>梨花带雨 3个</text></view>
+						</navigator>
+					</view>
+					<view class="product-list">
+						<navigator url="../list/list">
+							<image src="../../assets/images/classifyItemBg.png"></image>
+							<view class="classname"><text>梨花带雨 3个</text></view>
+						</navigator>
+					</view>
+					<view class="product-list">
+						<navigator url="../list/list">
+							<image src="../../assets/images/classifyItemBg.png"></image>
+							<view class="classname"><text>梨花带雨 3个</text></view>
+						</navigator>
+					</view>
+				</view>
+			</view>
+		</block>
+	</scroll-view>
 </view>

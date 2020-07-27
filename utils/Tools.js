@@ -1,7 +1,5 @@
-
-class Tools{
-	constructor() {
-	}
+class Tools {
+	constructor() {}
 
 	/**
 	 * 返回文件后缀
@@ -9,8 +7,41 @@ class Tools{
 	 * @return {String}      
 	 */
 	getFilenameExt(file) {
-	    const types = file.name.split('.')
-	    return types[types.length - 1]
+		const types = file.name.split('.')
+		return types[types.length - 1]
+	}
+
+	/**
+	 * 五种页面跳转的方法
+	 * @param  {String} url 
+	 * @param  {String} mode  
+	 */
+	goTo(url, mode, param) {
+		switch (mode) {
+			case 'tab':
+				wx.switchTab({
+					url: url + '?param=' + param
+				})
+				break;
+			case 'rel':
+				wx.reLaunch({
+					url: url + '?param=' + param
+				})
+				break;
+			case 'red':
+				wx.redirectTo({
+					url: url + '?param=' + param
+				})
+				break;
+			case 'nav':
+				wx.navigateTo({
+					url: url + '?param=' + param
+				})
+				break;
+			case 'back':
+				wx.navigateTo()
+				break;
+		}
 	}
 
 	/**
@@ -20,7 +51,7 @@ class Tools{
 	 * @return {String}      
 	 */
 	rand(min, max) {
-	    return Math.floor(Math.random() * (max - min + 1) + min)
+		return Math.floor(Math.random() * (max - min + 1) + min)
 	}
 
 	/**
@@ -29,41 +60,41 @@ class Tools{
 	 * @return {String}      
 	 */
 	randString(size) {
-	    let result  = ''
-	    let allChar = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
-	    
-	    size = size || 1
+		let result = ''
+		let allChar = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
-	    while (size--) {
-	        result += allChar.charAt(this.rand(0, allChar.length - 1))
-	    }
-	    
-	    return result
+		size = size || 1
+
+		while (size--) {
+			result += allChar.charAt(this.rand(0, allChar.length - 1))
+		}
+
+		return result
 	}
-  /**
+	/**
 	 * 逢四添加空格     
 	 */
-  blankFour(number){
-    var value = number.replace(/\D/g, '').replace(/(....)(?=.)/g, '$1 ');
-    return value;
-  }
-  /**
-   * 去除字符串内所有的空格
-   */
-  trim(number){
-    var value = number.replace(/\s*/g, '');
-    return value;
-  }
-  /**
+	blankFour(number) {
+		var value = number.replace(/\D/g, '').replace(/(....)(?=.)/g, '$1 ');
+		return value;
+	}
+	/**
+	 * 去除字符串内所有的空格
+	 */
+	trim(number) {
+		var value = number.replace(/\s*/g, '');
+		return value;
+	}
+	/**
 	 * showToast     
 	 */
-  toast(title,icon="none"){
-    wx.showToast({
-      title: title,
-      icon:icon,
-      duration: 2000
-    })
-  }
+	toast(title, icon = "none") {
+		wx.showToast({
+			title: title,
+			icon: icon,
+			duration: 2000
+		})
+	}
 	/**
 	 * 生成文件名
 	 * @param  {Object} file 
@@ -225,7 +256,7 @@ class Tools{
 	 */
 	isNull(value) {
 		return value === null
-    }
+	}
 
 	/**
 	 * 判断某个元素是否为有限数
@@ -233,26 +264,26 @@ class Tools{
 	 * @return {Boolean}       
 	 */
 	isFinite(value) {
-      return typeof value == 'number' && isFinite(value)
-    }
+		return typeof value == 'number' && isFinite(value)
+	}
 
-    /**
-     * 判断某个元素是否为自然数
-     * @param  {Number}  value 
-     * @return {Boolean}       
-     */
-    isNaN(value) {
-      return this.isNumber(value) && value != +value
-    }
+	/**
+	 * 判断某个元素是否为自然数
+	 * @param  {Number}  value 
+	 * @return {Boolean}       
+	 */
+	isNaN(value) {
+		return this.isNumber(value) && value != +value
+	}
 
-    /**
-     * 判断某个元素是否为错误类型
-     * @param  {Object}  value 
-     * @return {Boolean}       
-     */
-    isError(value) {
-    	return this.type(value) === '[object Error]'
-    }
+	/**
+	 * 判断某个元素是否为错误类型
+	 * @param  {Object}  value 
+	 * @return {Boolean}       
+	 */
+	isError(value) {
+		return this.type(value) === '[object Error]'
+	}
 
 	/**
 	 * 删除字符串左右两端的空格
@@ -278,7 +309,8 @@ class Tools{
 	 * @return {Object} in the form of {key1:true, key2:true, ...}    
 	 */
 	makeMap(str) {
-		let obj = {}, items = str.split(',')
+		let obj = {},
+			items = str.split(',')
 		for (let i = 0; i < items.length; i++) {
 			obj[items[i]] = !0
 		}
@@ -357,7 +389,7 @@ class Tools{
 
 		if (typeof target === 'boolean') {
 			deep = target
-			target = arguments[ i ] || {}
+			target = arguments[i] || {}
 			i++
 		}
 
@@ -371,7 +403,7 @@ class Tools{
 		}
 
 		for (; i < length; i++) {
-			if ( (options = arguments[ i ]) != null ) {
+			if ((options = arguments[i]) != null) {
 				for (name in options) {
 					src = target[name]
 					copy = options[name]
@@ -413,8 +445,8 @@ class Tools{
 		if (!obj || this.type(obj) !== '[object Object]') {
 			return !1
 		}
-		proto = getProto( obj )
-		if ( !proto ) {
+		proto = getProto(obj)
+		if (!proto) {
 			return !0
 		}
 		Ctor = hasOwn.call(proto, 'constructor') && proto.constructor
@@ -428,8 +460,8 @@ class Tools{
 	 */
 	isEmptyObject(obj) {
 		for (let i in obj)
-            return !1
-        return !0
+			return !1
+		return !0
 	}
 
 	/**
@@ -440,7 +472,7 @@ class Tools{
 	type(obj) {
 		const toString = Object.prototype.toString
 
-		if ( obj == null ) {
+		if (obj == null) {
 			return obj + ''
 		}
 
@@ -462,16 +494,16 @@ class Tools{
 	 * @return {Object}     
 	 */
 	clone(obj) {
-	    if (typeof obj !== 'object' || !obj) {
-	        return obj
-	    }
-	    let copy = {}
-	    for (let attr in obj) {
-	        if (obj.hasOwnProperty(attr)) {
-	            copy[attr] = obj[attr]
-	        }
-	    }
-	    return copy
+		if (typeof obj !== 'object' || !obj) {
+			return obj
+		}
+		let copy = {}
+		for (let attr in obj) {
+			if (obj.hasOwnProperty(attr)) {
+				copy[attr] = obj[attr]
+			}
+		}
+		return copy
 	}
 
 	/**
@@ -481,11 +513,11 @@ class Tools{
 	 * @return {[type]}      
 	 */
 	omit(obj, keys) {
-	    let o = this.clone(obj)
-	    keys.forEach(key => {
-	        delete o[key]
-	    })
-	    return o
+		let o = this.clone(obj)
+		keys.forEach(key => {
+			delete o[key]
+		})
+		return o
 	}
 
 	/**
@@ -495,13 +527,13 @@ class Tools{
 	 * @return {Array}     
 	 */
 	pluck(arr, key) {
-	    if (typeof arr !== 'object' || arr.length === 0) {
-	        return []
-	    }
-	    if (!key) {
-	        return arr
-	    }
-	    return arr.map(a => a[key])
+		if (typeof arr !== 'object' || arr.length === 0) {
+			return []
+		}
+		if (!key) {
+			return arr
+		}
+		return arr.map(a => a[key])
 	}
 
 	/**
@@ -522,12 +554,12 @@ class Tools{
 	 */
 	encodeUriQuery(value, pctEncodeSpaces) {
 		return encodeURIComponent(value)
-		.replace(/%40/gi, '@')
-		.replace(/%3A/gi, ':')
-		.replace(/%24/g, '$')
-		.replace(/%2C/gi, ',')
-		.replace(/%3B/gi, ';')
-		.replace(/%20/g, (pctEncodeSpaces ? '%20' : '+'))
+			.replace(/%40/gi, '@')
+			.replace(/%3A/gi, ':')
+			.replace(/%24/g, '$')
+			.replace(/%2C/gi, ',')
+			.replace(/%3B/gi, ';')
+			.replace(/%20/g, (pctEncodeSpaces ? '%20' : '+'))
 	}
 
 	/**
@@ -539,62 +571,77 @@ class Tools{
 		if (!obj) return ''
 		let that = this
 		let parts = []
-		for(let key in obj) {
+		for (let key in obj) {
 			const value = obj[key]
 			if (value === null || that.isUndefined(value)) return
 			if (that.isArray(value)) {
-				value.forEach(function(v) {
-					parts.push(that.encodeUriQuery(key)  + '=' + that.encodeUriQuery(that.serializeValue(v)))
+				value.forEach(function (v) {
+					parts.push(that.encodeUriQuery(key) + '=' + that.encodeUriQuery(that.serializeValue(v)))
 				})
 			} else {
 				parts.push(that.encodeUriQuery(key) + '=' + that.encodeUriQuery(that.serializeValue(value)))
 			}
 		}
 		return parts.join('&')
-    }
+	}
 
-    /**
+	/**
 	 * 拼接URL
 	 * @param  {String} obj 
 	 * @param  {Object} obj 
 	 * @return {String} 
 	 */
-    buildUrl(url, obj) {
-    	const serializedParams = this.paramSerializer(obj)
+	buildUrl(url, obj) {
+		const serializedParams = this.paramSerializer(obj)
 		if (serializedParams.length > 0) {
 			url += ((url.indexOf('?') == -1) ? '?' : '&') + serializedParams
 		}
 		return url
-    }
-    abc(){
-      return 'test'
-    }
+	}
+	abc() {
+		return 'test'
+	}
 
 
-  formatTime(date, fmt = 'yyyy/MM/dd hh:mm:ss'){
-      if (!date) return ''
-      const myDate = typeof date === 'number' ? new Date(date) : date
-      const arr = [
-        { key: 'M+', value: myDate.getMonth() + 1 },
-        { key: 'd+', value: myDate.getDate() },
-        { key: 'h+', value: myDate.getDate() },
-        { key: 'm+', value: myDate.getDate() },
-        { key: 's+', value: myDate.getDate() }]
-      let format = fmt
-      if (/(y+)/.test(format)) format = format.replace(RegExp.$1, String(myDate.getFullYear()).substr(4 - RegExp.$1.length))
+	formatTime(date, fmt = 'yyyy/MM/dd hh:mm:ss') {
+		if (!date) return ''
+		const myDate = typeof date === 'number' ? new Date(date) : date
+		const arr = [{
+				key: 'M+',
+				value: myDate.getMonth() + 1
+			},
+			{
+				key: 'd+',
+				value: myDate.getDate()
+			},
+			{
+				key: 'h+',
+				value: myDate.getDate()
+			},
+			{
+				key: 'm+',
+				value: myDate.getDate()
+			},
+			{
+				key: 's+',
+				value: myDate.getDate()
+			}
+		]
+		let format = fmt
+		if (/(y+)/.test(format)) format = format.replace(RegExp.$1, String(myDate.getFullYear()).substr(4 - RegExp.$1.length))
 
-      for (let i = 0, len = arr.length; i < len; i += 1) {
-        const cur = arr[i]
-        if (new RegExp(`(${cur.key})`).test(format)) {
-          format = format.replace(RegExp.$1, (RegExp.$1.length === 1) ?
-            (cur.value) :
-            ((`00${cur.value}`).substr(String(cur.value).length)))
-        }
-      }
-      return format
-    }
+		for (let i = 0, len = arr.length; i < len; i += 1) {
+			const cur = arr[i]
+			if (new RegExp(`(${cur.key})`).test(format)) {
+				format = format.replace(RegExp.$1, (RegExp.$1.length === 1) ?
+					(cur.value) :
+					((`00${cur.value}`).substr(String(cur.value).length)))
+			}
+		}
+		return format
+	}
 
-    
+
 }
 
 export default Tools

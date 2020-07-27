@@ -1,0 +1,17 @@
+<!--pages/designMode/designMode.wxml-->
+<view class="designModeContainer">
+	<view class="designModeBg"></view>
+	<view class="designModeMain">
+		<view class="designModeBox">
+			<view class="designModeTitle">请选择模式入口！</view>
+			<view class="designModeItem bgColor01">
+				<image src="../../assets/images/modeBtnBg01.png" mode="widthFix"></image>
+				<text>线下物料</text>
+			</view>
+			<view class="designModeItem bgColor02">
+				<image src="../../assets/images/modeBtnBg02.png" mode="widthFix"></image>
+				<text>线上设计</text>
+			</view>
+		</view>
+	</view>
+</view>

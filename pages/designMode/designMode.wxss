@@ -1,0 +1,54 @@
+/* pages/designMode/designMode.wxss */
+.designModeBg{
+  height:130rpx;
+  background:#e23308;
+}
+.designModeMain{
+  padding:0 30rpx;
+}
+.designModeBox{
+  background:#fff;
+  border-radius:10rpx;
+  box-shadow:0 20rpx 20rpx #f1f1f1;
+  margin-top:-100rpx;
+  padding:0 135rpx 20rpx;
+}
+.designModeTitle{
+  font-size:32rpx;
+  color:#1b1b1b;
+  line-height:150rpx;
+  text-align:center;
+  font-weight:bold;
+}
+.designModeItem{
+  padding:20rpx;
+  border-radius:20rpx;
+  position:relative;
+  margin-bottom:65rpx;
+}
+.designModeItem.bgColor01{
+  background:#e7325c;
+  box-shadow:0 0 10rpx #fce7ec;
+}
+.designModeItem image{
+  display:block;
+}
+.designModeItem>text{
+  width:100%;
+  position:absolute;
+  left:0;
+  top:50%;
+  margin-top:-40rpx;
+  height:80rpx;
+  line-height:80rpx;
+  display:block;
+  font-size:40rpx;
+  color:#fff;
+  text-align:center;
+  font-weight:bold;
+  letter-spacing:5rpx;
+}
+.designModeItem.bgColor02{
+  background:#0073bd;
+  box-shadow:0 0 10rpx #d1f5fc;
+}

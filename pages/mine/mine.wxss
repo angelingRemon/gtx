@@ -1,1 +1,78 @@
 /* pages/mine/mine.wxss */
+.mineHeaderMain{
+  position:relative;
+}
+.mineHeaderMain>image{
+  width:100%;
+  display:block;
+}
+.mineHeaderMain .mineHeaderBox{
+  width:100%;
+  height:100%;
+  position:absolute;
+  left:0;
+  top:0;
+}
+.mineHeaderMain .mineHeaderBox .avatarUrl{
+  width:130rpx !important;
+  height:130rpx !important;
+  overflow:hidden;
+  border-radius:50%;
+  position:absolute;
+  left:50%;
+  bottom:130rpx;
+  margin-left:-65rpx;
+}
+.mineHeaderMain .mineHeaderBox .nickName{
+  font-size:36rpx;
+  color:#fff;
+  position:absolute;
+  width:100%;
+  text-align:center;
+  left:0;
+  bottom:50rpx;
+}
+.mineDataMain{
+  padding:30rpx;
+}
+.mineDataBox{
+  background:#fff;
+  box-shadow:0 20rpx 20rpx #f1f1f1;
+  border-radius:10rpx;
+  padding:30rpx 20rpx;
+}
+.mineDataBox view{
+  width:100%;
+}
+.mineDataBox view text{
+  display:block;
+  text-align:center;
+}
+.mineDataBox view text:first-of-type{
+  font-size:38rpx;
+  color:#7b7b7b;
+  padding-top:5rpx;
+}
+.mineDataBox view text:last-of-type{
+  font-size:24rpx;
+  color:#7b7b7b;
+}
+.mineIconMenuMain{
+  padding:20rpx 20rpx 40rpx;
+}
+.mineIconMenuBox view .fontIcon{
+  display:block;
+  font-size:60rpx;
+  color:#e23308;
+  margin:0 atuo;
+}
+.mineIconMenuBox view text{
+  font-size:28rpx;
+  color:#9a9a9a;
+  display:block;
+  text-align:center;
+}
+.navView{
+  height:20rpx;
+  width:100%;
+}
