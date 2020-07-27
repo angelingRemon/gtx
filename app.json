@@ -5,7 +5,8 @@
     "pages/mine/mine",
     "pages/designMode/designMode",
     "pages/makeMode/makeMode",
-    "pages/serviceMode/serviceMode"
+    "pages/serviceMode/serviceMode",
+    "pages/finalize/finalize"
   ],
   "window":{
     "backgroundTextStyle":"light",
