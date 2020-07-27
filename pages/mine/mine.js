@@ -1,4 +1,6 @@
 // pages/mine/mine.js
+//获取应用实例
+const app = getApp()
 Page({
 
   /**
@@ -62,5 +64,8 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  goToFinalizeTap: function () {
+    app.Tools.goTo('/pages/finalize/finalize', 'nav');
   }
 })

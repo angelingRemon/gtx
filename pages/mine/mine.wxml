@@ -28,7 +28,7 @@
 	<!-- 图标菜单 -->
 	<view class="mineIconMenuMain">
 		<view class="mineIconMenuBox flex justify-around">
-			<view>
+			<view catchtap="goToFinalizeTap">
 				<van-icon name="column" class="fontIcon" />
 				<text>定稿</text>
 			</view>

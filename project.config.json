@@ -90,6 +90,13 @@
 					"id": -1,
 					"name": "pages/designMode/designMode",
 					"pathName": "pages/designMode/designMode",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/finalize/finalize",
+					"pathName": "pages/finalize/finalize",
 					"scene": null
 				}
 			]
