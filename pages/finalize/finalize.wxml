@@ -1,2 +1,10 @@
 <!--pages/finalize/finalize.wxml-->
-<text>pages/finalize/finalize.wxml</text>
+<view class="finalizeCotainer">
+  <view class="finalizeListMain">
+     <view class="finalizeListBox">
+       <view class="finalizeListItem" wx:for="{{listArr}}">
+           
+       </view>
+     </view>
+  </view>
+</view>

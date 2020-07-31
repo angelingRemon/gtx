@@ -1,13 +1,22 @@
-// pages/finalize/finalize.js
-//获取应用实例
-const app = getApp()
+// pages/detail/detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    listArr:[1,1,1]
+    cardCur: 0,
+    swiperList: [{
+      id: 0,
+      url: '../../assets/images/detailBannerImg.jpg'
+    }, {
+      id: 1,
+      url: '../../assets/images/detailBannerImg.jpg',
+      }, {
+        id: 2,
+        url: '../../assets/images/detailBannerImg.jpg',
+      }] ,
+      value:4
   },
 
   /**

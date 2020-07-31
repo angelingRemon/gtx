@@ -97,6 +97,13 @@
 					"id": -1,
 					"name": "pages/finalize/finalize",
 					"pathName": "pages/finalize/finalize",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/detail/detail",
+					"pathName": "pages/detail/detail",
 					"scene": null
 				}
 			]

@@ -34,7 +34,7 @@
 				</view>
 				<view class="product">
 					<view class="product-list">
-						<navigator url="../list/list">
+						<navigator url="/pages/detail/detail">
 							<image src="../../assets/images/classifyItemBg.png"></image>
 							<view class="classname"><text>梨花带雨 3个</text></view>
 						</navigator>
@@ -52,25 +52,25 @@
 				</view>
 				<view class="product">
 					<view class="product-list">
-						<navigator url="../list/list">
+						<navigator url="/pages/detail/detail">
 							<image src="../../assets/images/classifyItemBg.png"></image>
 							<view class="classname"><text>梨花带雨 3个</text></view>
 						</navigator>
 					</view>
 					<view class="product-list">
-						<navigator url="../list/list">
+						<navigator url="/pages/detail/detail">
 							<image src="../../assets/images/classifyItemBg.png"></image>
 							<view class="classname"><text>梨花带雨 3个</text></view>
 						</navigator>
 					</view>
 					<view class="product-list">
-						<navigator url="../list/list">
+						<navigator url="/pages/detail/detail">
 							<image src="../../assets/images/classifyItemBg.png"></image>
 							<view class="classname"><text>梨花带雨 3个</text></view>
 						</navigator>
 					</view>
 					<view class="product-list">
-						<navigator url="../list/list">
+						<navigator url="/pages/detail/detail">
 							<image src="../../assets/images/classifyItemBg.png"></image>
 							<view class="classname"><text>梨花带雨 3个</text></view>
 						</navigator>

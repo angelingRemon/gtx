@@ -1,4 +1,5 @@
 // pages/designMode/designMode.js
+const app = getApp();
 Page({
 
   /**
@@ -62,5 +63,8 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  goToClassifyTap(){
+     app.Tools.goTo('/pages/classify/classify','nav');
   }
 })

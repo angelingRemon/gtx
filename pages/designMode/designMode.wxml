@@ -4,7 +4,7 @@
 	<view class="designModeMain">
 		<view class="designModeBox">
 			<view class="designModeTitle">请选择模式入口！</view>
-			<view class="designModeItem bgColor01">
+			<view class="designModeItem bgColor01" catchtap="goToClassifyTap">
 				<image src="../../assets/images/modeBtnBg01.png" mode="widthFix"></image>
 				<text>线下物料</text>
 			</view>

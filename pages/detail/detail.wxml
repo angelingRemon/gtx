@@ -1,0 +1,116 @@
+<!--pages/detail/detail.wxml-->
+<view class="detailContainer">
+	<!-- banner -->
+	<view class="detailBanner">
+		<swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+			<swiper-item wx:for="{{swiperList}}" wx:key>
+				<image src="{{item.url}}" mode="aspectFill"></image>
+			</swiper-item>
+		</swiper>
+	</view>
+	<!-- titleInfo -->
+	<view class="detailTitleInfo">
+		<view class="mainTitle">
+			<text>普通X展架</text>
+			<van-icon name="share" custom-class="shareIcon" size="20" />
+		</view>
+		<view class="subTitle">
+			普通韩式X展架 易拉宝海报架 经济X架广告展架 60*160 80*180cm
+		</view>
+		<view class="priceBox">
+			<view>￥71.22<text>￥76.00</text></view>
+		</view>
+		<view class="tipBox">
+			<text>限时促销</text>
+		</view>
+		<view class="otherInfo flex align-center justify-between">
+			<view>快递:0.00</view>
+			<view>月销：88</view>
+			<view>呼和浩特</view>
+		</view>
+	</view>
+	<!-- 优惠信息 规格 -->
+	<view class="discountsMain">
+		<view class="discountsItem solid-bottom">
+			<text>优惠</text>
+			<text>下单立返10个点,下级制作立返5个点</text>
+		</view>
+		<view class="discountsItem">
+			<text>已选</text>
+			<text>180cm*80cm铝合金横杆一根,1件</text>
+			<van-icon name="weapp-nav" size="20" color="#df463c" custom-class="moreIcon" />
+		</view>
+	</view>
+	<!-- 地址 -->
+	<view class="addressMain">
+		<view class="top">
+			<text>送至</text>
+			<text>内蒙古呼和浩特市玉泉区恒盛广场C座14楼...</text>
+			<van-icon name="weapp-nav" size="20" color="#df463c" custom-class="moreIcon" />
+		</view>
+		<view class="sub">
+			<text>提示：</text>
+			<text>与设计师定稿后次日送达</text>
+		</view>
+	</view>
+	<!-- 评价 -->
+	<view class="evaluateMain">
+		<view class="evaluateHeader flex justify-between">
+			<view class="left flex align-center">
+				<image src="../../assets/images/titleTipImg.png" mode="widthFix"></image>
+				<text>评价</text>
+				<text>60+ </text>
+			</view>
+			<view class="right flex align-center">
+				<text>好评度100%</text>
+				<van-icon name="weapp-nav" size="20" color="#df463c" custom-class="moreIcon" />
+			</view>
+		</view>
+		<view class="evaluateTip flex">
+			<text>标签一</text>
+			<text>标签二</text>
+		</view>
+		<view class="evaluateBody">
+			<view class="evaluateList">
+				<view class="evaluateItem" wx:for="{{[1,1,1]}}">
+					<view class="evaluateItemTop flex align-center">
+						<image src="../../assets/images/userIcon.png" mode="widthFix"></image>
+						<view>
+							<text>用户A</text>
+							<van-rate readonly value="{{ value }}" color="#df463c" void-color="#f1f1f1" size="10" />
+						</view>
+					</view>
+					<view class="evaluateItemSub">
+						平台设计师出图很快，设计效果很好，沟通也很便捷，设计师很了解呵护需求，制作也快
+						按时送了过来，东西挺好交易完成后梵返现的钱我已经提现了.
+					</view>
+				</view>
+				<view class="viewMore">
+					<text>查看更多</text>
+				</view>
+			</view>
+		</view>
+	</view>
+	<!-- 详情 -->
+	<view class="detailContent">
+		<view class="title solid-bottom">
+			<text>详情</text>
+		</view>
+		<view class="content">
+			产品产地：河北省霸州市
+
+			产品品牌：博美展具
+
+			产品名：普通韩式、磨砂黑韩、加重X展架、齿轮展架、弓形展架、扣型展架、美式展架、桌面展架
+
+			规格：60*160CM、80*180CM
+			5. 本产品不适用于诊断、治疗或其他商业用途
+			6. 如需清洁，应使用浸有中性清洁的消毒棉花擦拭，避免清水清洁
+		</view>
+	</view>
+	<van-goods-action safe-area-inset-bottom custom-class="vant-goods-button">
+  	<van-goods-action-icon icon="wap-home-o" text="首页" />
+		<van-goods-action-icon icon="chat-o" text="客服" />
+		<van-goods-action-button color="#d81e06" text="设计制作" size="mini"/>
+	</van-goods-action>
+</view>
