@@ -32,7 +32,7 @@
 				<van-icon name="column" class="fontIcon" />
 				<text>定稿</text>
 			</view>
-			<view>
+			<view catchtap="goToWalletTap">
 				<van-icon name="gold-coin" class="fontIcon" />
 				<text>钱包</text>
 			</view>
@@ -40,7 +40,7 @@
 				<van-icon name="balance-list" class="fontIcon" />
 				<text>发票</text>
 			</view>
-			<view>
+			<view catchtap="goToShareImage">
 				<van-icon name="invition" class="fontIcon" />
 				<text>分享</text>
 			</view>

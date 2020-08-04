@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "定稿",
-  "usingComponents": {}
+  "usingComponents": {
+    "van-icon": "@vant/weapp/icon/index"
+  }
 }

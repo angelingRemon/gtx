@@ -1,5 +1,4 @@
-// pages/detail/detail.js
-const app = getApp();
+// pages/share/share.js
 Page({
 
   /**
@@ -9,22 +8,24 @@ Page({
     cardCur: 0,
     swiperList: [{
       id: 0,
-      url: '../../assets/images/detailBannerImg.jpg'
+      type: 'image',
+      url: '../../assets/images/shareBannerImg.jpg'
     }, {
       id: 1,
-      url: '../../assets/images/detailBannerImg.jpg',
-      }, {
-        id: 2,
-        url: '../../assets/images/detailBannerImg.jpg',
-      }] ,
-      value:4
+      type: 'image',
+      url: '../../assets/images/shareBannerImg2.jpg'
+    }, {
+      id: 2,
+      type: 'image',
+      url: '../../assets/images/shareBannerImg3.jpg'
+    }],
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.towerSwiper('swiperList');
   },
 
   /**
@@ -75,7 +76,15 @@ Page({
   onShareAppMessage: function () {
 
   },
-  onClickButton: function(){
-    app.Tools.goTo('/pages/design/design','nav');
+  DotStyle(e) {
+    this.setData({
+      DotStyle: e.detail.value
+    })
+  },
+  // cardSwiper
+  cardSwiper(e) {
+    this.setData({
+      cardCur: e.detail.current
+    })
   }
 })

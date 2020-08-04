@@ -1,0 +1,75 @@
+/* pages/design/design.wxss */
+page{
+    padding-top:30rpx;
+}
+.designMain{
+    position:relative;
+}
+.designHeaderBg{
+    position:absolute;
+    width:100%;
+    height:120rpx;
+    top:-30rpx;
+    left:0;
+    background:#e23308;
+}
+.designBox{
+    padding:0 30rpx 30rpx;
+}
+.designBody{
+    background:#fff;
+    position: relative;
+    z-index:999;
+    padding-top:30rpx;
+}
+.designBody>text{
+    text-align:center;
+    display: block;
+    line-height:80rpx;
+    padding-bottom:20rpx;
+    font-size:32rpx;
+    color:#1b1b1b;
+    font-weight:bold;
+}
+.designItem{
+    overflow:hidden;
+    padding:0 30rpx;
+    margin-bottom:30rpx;
+}
+.designItem image{
+   width:150rpx;
+   height:150rpx; 
+   display: block;
+   float:left;
+   border-radius:20rpx;
+}
+.designRight{
+    padding-left:170rpx;
+}
+.designRight>text{
+    display:block;
+}
+.designRight>text.name{
+    font-size:36rpx;
+    color:#e23308;
+    font-weight:bold;
+    padding-top:30rpx;
+}
+.designRight>text.job{
+    font-size:28rpx;
+    padding-top:10rpx;
+}
+.progress{
+    padding-top:50rpx;
+    padding-bottom:30rpx;
+}
+.item{
+    padding:10rpx 0;
+}
+.item>text{
+    font-size:24rpx;
+}
+.item .cu-progress{
+    width:290rpx;
+    margin-left:20rpx;
+}

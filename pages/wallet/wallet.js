@@ -1,23 +1,11 @@
-// pages/detail/detail.js
-const app = getApp();
+// pages/wallet/wallet.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    cardCur: 0,
-    swiperList: [{
-      id: 0,
-      url: '../../assets/images/detailBannerImg.jpg'
-    }, {
-      id: 1,
-      url: '../../assets/images/detailBannerImg.jpg',
-      }, {
-        id: 2,
-        url: '../../assets/images/detailBannerImg.jpg',
-      }] ,
-      value:4
+
   },
 
   /**
@@ -74,8 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  onClickButton: function(){
-    app.Tools.goTo('/pages/design/design','nav');
   }
 })

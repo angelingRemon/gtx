@@ -7,7 +7,11 @@
     "pages/makeMode/makeMode",
     "pages/serviceMode/serviceMode",
     "pages/finalize/finalize",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/share/share",
+    "pages/wallet/wallet",
+    "pages/comfirm/comfirm",
+    "pages/design/design"
   ],
   "window":{
     "backgroundTextStyle":"light",

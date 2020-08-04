@@ -1,0 +1,9 @@
+/* pages/share/share.wxss */
+.saveImage{
+    padding:30rpx 0;
+}
+.saveImage button{
+    background:#e23308;
+    color:#fff;
+    font-size:32rpx;
+}

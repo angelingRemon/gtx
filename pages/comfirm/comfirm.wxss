@@ -1,0 +1,110 @@
+/* pages/comfirm/comfirm.wxss */
+.headerBg{
+    height:130rpx;
+    background:#e23308;
+}
+.comfirmBox{
+   padding:0 30rpx;
+}
+.address{
+    background:#fff;
+    padding:30rpx;
+    position: relative;
+    z-index:999;
+    margin-top:-100rpx;
+    margin-bottom:20rpx;
+}
+.address button{
+    height:80rpx;
+    line-height:80rpx;
+    background:#e23308;
+    color:#fff;
+    padding:0;
+    font-size:28rpx;
+}
+.product{
+    background:#fff;
+    padding:30rpx;
+    margin-bottom:20rpx;
+}
+.product image{
+    width:150rpx;
+    height:150rpx;
+    display:block;
+    float:left;
+}
+.textBox{
+    padding-left:170rpx;
+}
+.textBox text{
+    font-size:24rpx;
+    display: block;
+}
+.textBox text:first-of-type{
+    font-size:28rpx;
+    font-weight:bold;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    padding-bottom:10rpx;
+}
+.textBox view{
+    padding-top:5rpx;
+}
+.price,.info{
+   margin-bottom:20rpx; 
+}
+.designMain{
+    overflow: hidden;
+    background:#fff;
+    padding:30rpx;
+    margin-bottom:20rpx;
+}
+.designMain image{
+    width:150rpx;
+    height:150rpx;
+    display:block;
+    float:left;
+}
+.designBox{
+    padding-left:170rpx;
+}
+.designBox>view{
+    padding-top:20rpx;
+}
+.designBox view text{
+    font-size:32rpx;
+    color:#e23308;
+    font-weight:bold;
+}
+.footerMenu{
+    position:fixed;
+    width:100%;
+    left:0;
+    bottom:0;
+    background:#fff;
+    padding:20rpx 30rpx;
+    box-sizing:border-box;
+}
+.footerMenu view{
+    font-size:32rpx;
+    color:#ccc;
+    font-weight:bold;
+}
+.footerMenu view text{
+    font-size:50rpx;
+    color:#e23308;
+}
+.footerMenu button{
+    margin:0 !important;
+    padding:0;
+    width:250rpx !important;
+    height:80rpx !important;
+    line-height:80rpx;
+    font-size:28rpx;
+    background:#e23308;
+    float:right;
+    color:#fff;
+    border-radius:80rpx;
+
+}

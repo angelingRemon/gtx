@@ -1,0 +1,35 @@
+<!-- pages/wallet/wallet.wxml -->
+<view class="myWalletMain">
+    <view class="myWalletItem">
+        <view class="topBg"></view>
+        <view class="myWalletBox">
+            <view class="number">
+                <image src="../../assets/images/myWalletBg1.png" mode="widthFix"></image>
+                <text>我的钱包</text>
+                <text>423.00</text>
+            </view>
+            <view class="Menu">
+                <van-cell-group>
+                    <van-cell is-link title="提现余额" link-type="navigateTo" url="" />
+                    <van-cell is-link title="收支明细" link-type="navigateTo" url="" />
+                </van-cell-group>
+            </view>
+        </view>
+    </view>
+    <view class="myWalletItem">
+        <view class="topBg"></view>
+        <view class="myWalletBox">
+            <view class="number">
+                <image src="../../assets/images/myWalletBg2.png" mode="widthFix"></image>
+                <text>我的发票</text>
+                <text>423.00</text>
+            </view>
+            <view class="Menu">
+                <van-cell-group>
+                    <van-cell is-link title="我的发票" link-type="navigateTo" url="" />
+                    <van-cell is-link title="代办发票" link-type="navigateTo" url="" />
+                </van-cell-group>
+            </view>
+        </view>
+    </view>
+</view>

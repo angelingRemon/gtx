@@ -104,6 +104,48 @@
 					"id": -1,
 					"name": "pages/detail/detail",
 					"pathName": "pages/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/finalize/finalize",
+					"pathName": "pages/finalize/finalize",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/share/share",
+					"pathName": "pages/share/share",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wallet/wallet",
+					"pathName": "pages/wallet/wallet",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/comfirm/comfirm",
+					"pathName": "pages/comfirm/comfirm",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/design/design",
+					"pathName": "pages/design/design",
 					"scene": null
 				}
 			]

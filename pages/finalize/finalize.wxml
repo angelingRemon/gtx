@@ -1,10 +1,21 @@
 <!--pages/finalize/finalize.wxml-->
 <view class="finalizeCotainer">
-  <view class="finalizeListMain">
-     <view class="finalizeListBox">
-       <view class="finalizeListItem" wx:for="{{listArr}}">
-           
-       </view>
-     </view>
-  </view>
+	<view class="finalizeListMain">
+		<view class="finalizeListBox">
+			<view class="finalizeListItem" wx:for="{{listArr}}">
+				<image src="../../assets/images/detailBannerImg.jpg" mode="widthFix"></image>
+				<view class="textBox">
+					<view class="title flex justify-between">
+						<text>X展架</text>
+						<view class="flex align-center">
+							<van-icon name="clock" class="clockIcon"/>2020年7月20日 12:00:32
+            </view>
+					</view>
+					<view class="otherInfo green">普通韩式X展架 易拉宝海报架 经济X架</view>
+					<view class="otherInfo red">广告展架 60*160 80*180cm</view>
+					<button class="comfirmBtn">确定图稿，开始制作</button>
+				</view>
+			</view>
+		</view>
+	</view>
 </view>

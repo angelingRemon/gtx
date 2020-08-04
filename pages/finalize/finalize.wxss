@@ -1,1 +1,37 @@
 /* pages/finalize/finalize.wxss */
+.finalizeListBox {
+  padding: 20rpx;
+}
+.finalizeListItem {
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+.finalizeListItem image {
+  width: 100%;
+  display: block;
+}
+
+.textBox {
+  padding: 20rpx;
+}
+.textBox  view.title{
+  line-height:50rpx;
+  padding-bottom:10rpx;
+}
+.textBox  view>text{
+  font-weight:bold;
+}
+.textBox  view.title view .clockIcon{
+  margin-right:10rpx;
+  color:#ccc;
+}
+.textBox  view.otherInfo{
+  line-height:40rpx;
+}
+.comfirmBtn{
+  width:100% !important;
+  margin-top:10rpx;
+  background:#f33;
+  color:#fff;
+
+}

@@ -67,5 +67,11 @@ Page({
   },
   goToFinalizeTap: function () {
     app.Tools.goTo('/pages/finalize/finalize', 'nav');
+  },
+  goToShareImage: function () {
+    app.Tools.goTo('/pages/share/share','nav');
+  },
+  goToWalletTap: function(){
+    app.Tools.goTo('/pages/wallet/wallet','nav');
   }
 })
