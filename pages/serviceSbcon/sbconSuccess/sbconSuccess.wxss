@@ -1,0 +1,59 @@
+/* pages/sbcon/sbconSuccess/sbconSucess.wxss */
+.sbconSuccessMain .title{
+    text-align:center;
+    font-size:48rpx;
+    font-weight:bold;
+    padding:20rpx 0 70rpx;
+}
+.designBox{
+    width:90%;
+    background:#fff;
+    padding:30rpx;
+    border-radius:20rpx;
+    margin:0 auto;
+    box-sizing:border-box;
+}
+.designBox .designHeader{
+  overflow: hidden;
+}
+.designHeader>view:first-of-type{
+  width:140rpx;
+  height:140rpx;
+  float:left;
+}
+.designHeader>view:first-of-type image{
+    display:block;
+}
+.designHeader>view:last-of-type{
+    padding-left:170rpx;
+}
+.designHeader>view:last-of-type text{
+  display: block;
+}
+.designHeader>view:last-of-type text:first-of-type{
+    font-size:42rpx;
+    font-weight:bold;
+    color:#333;
+    padding-bottom:10rpx;
+    padding-top:18rpx;
+}
+.designBody{
+    margin-top:30rpx;
+    padding-top:30rpx;
+}
+.designBody>view text:last-of-type{
+    font-weight:bold;
+    padding-left:10rpx;
+}
+.designFooter{
+    padding-top:30rpx;
+}
+.designFooter button:first-of-type{
+    margin-right:30rpx;
+}
+.sbconSuccessMain .cuIcon-roundcheckfill{
+    font-size:100rpx;
+    display: block;
+    text-align:center;
+    padding-top:70rpx;
+}

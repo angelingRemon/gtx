@@ -1,0 +1,61 @@
+/* pages/invoice/invoice.wxss */
+.invoiceMain .title{
+    height:80rpx;
+    line-height:80rpx;
+    color:#999;
+    padding:0 30rpx;
+}
+.invoiceType{
+    padding:30rpx 0;
+    background:#fff;
+}
+.invoiceWay{
+    background:#fff;
+    padding:20rpx 30rpx;
+}
+.invoiceWay view{
+    border-radius:10rpx;
+    border:1px solid #999;
+    text-align:center;
+    padding:20rpx 0;
+    width:100%;
+}
+.invoiceWay view:first-of-type{
+    margin-right:30rpx;
+}
+.invoiceWay view text{
+    display: block;
+}
+.invoiceWay view text:first-of-type{
+    font-size:36rpx;
+}
+.invoiceWay view.active{
+    color:#e23308;
+    border-color:#e23308;
+}
+.tip{
+    padding-bottom:20rpx;
+    padding-left:30rpx;
+    padding-right:30rpx;
+    background:#fff;
+    font-size:24rpx;
+    color:#999;
+}
+.submitBtn{
+    padding:30rpx;
+}
+.submitBtn button{
+    width:100% !important;
+    margin:0;
+}
+.headerTitle{
+  background:#fff;
+  height:80rpx;
+  line-height:80rpx;
+  padding:var(--cell-vertical-padding,10px) var(--cell-horizontal-padding,16px);
+}
+.headerTitle view text{
+  padding:0 20rpx;
+  font-size:24rpx;
+  color:#ccc;
+}

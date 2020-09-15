@@ -1,0 +1,13 @@
+<!--pages/sbcon/sbcon.wxml-->
+<view class="sbconMain">
+  <view class="loadingText">上帝，别走，logo设计大神马上就到！</view>
+  <image src="../../assets/images/loadingImg.gif" mode="widthFix"></image>
+  <view class="matchingText">
+    <view>正在匹配<text>{{dot}}</text></view>
+    <view>擅长
+      <text>LOGO设计</text>的大神</view>
+  </view>
+  <view class="btnMain flex justify-center">
+   <button class="cu-btn round bg-gray" role="button"aria-disabled="false">取消匹配</button>
+  </view>
+</view>

@@ -4,11 +4,11 @@
 	<view class="designModeMain">
 		<view class="designModeBox">
 			<view class="designModeTitle">请选择制作入口！</view>
-			<view class="designModeItem bgColor01">
+			<view class="designModeItem bgColor01" catchtap="goToSbconServiceTap">
 				<image src="../../assets/images/modeBtnBg01.png" mode="widthFix"></image>
 				<text>有稿制作</text>
 			</view>
-			<view class="designModeItem bgColor02">
+			<view class="designModeItem bgColor02" catchtap="goToDesignMode">
 				<image src="../../assets/images/modeBtnBg02.png" mode="widthFix"></image>
 				<text>无稿制作</text>
 			</view>

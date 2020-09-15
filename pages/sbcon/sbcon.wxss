@@ -1,0 +1,32 @@
+/* pages/sbcon/sbcon.wxss */
+page{
+  background:#fff;
+}
+.loadingText{
+  font-size:32rpx;
+  text-align:center;
+  font-weight:bold;
+  padding-top:40rpx;
+}
+.sbconMain{
+  padding-top:25%;
+}
+.sbconMain>image{
+  width:60%;
+  margin:20rpx auto;
+  display:block;
+}
+.matchingText{
+  text-align:center;
+  font-size:38rpx;
+  font-weight:bold;
+}
+.matchingText>view:first-of-type{
+  padding-bottom:10rpx;
+}
+.matchingText text{
+  color:#e23308;
+}
+.btnMain{
+  padding-top:100rpx;
+}

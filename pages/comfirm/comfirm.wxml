@@ -1,34 +1,43 @@
 <!-- pages/comfirm/comfirm.wxml -->
 <view class="comfirmMain">
-    <view class="headerBg"></view>
-    <view class="comfirmBox">
-        <view class="address">
-            <button>添加收货地址</button>
-        </view>
-        <view class="product">
-            <image src="../../assets/images/detailBannerImg.jpg"></image>
-            <view class="textBox">
-                <text>普通韩式X展架 易拉宝海报架 经济X架广告</text>
-                <text>展架 60*160 80*180cm</text>
-                <view class="flex justify-end">
-                    <van-stepper value="{{ 1 }}" bind:change="onChange" />
-                </view>
-            </view>
-        </view>
-        <view class="price">
-            <van-cell-group>
-                <van-cell title="商品总价" value="￥72.00" />
-                <van-cell title="运费" value="免运费" />
-            </van-cell-group>
-        </view>
-        <view class="info">
-            <van-cell-group>
-                <van-cell title="配送时间" value="定稿制作第二天送达" />
-                <van-cell title="发票" value="不开发票" is-link />
-                <van-cell title="支付方式" value="设计制作总价的30%" />
-            </van-cell-group>
-        </view>
-        <view class="designMain" catchtap="goToDesign">
+	<view class="headerBg"></view>
+	<view class="comfirmBox">
+		<view class="address">
+			<button catchtap="addAddressTap" wx:if="{{false}}">添加收货地址</button>
+			<view class="addressBox" wx:else catchtap="addAddressTap">
+			  <view class="topBox flex align-center justify-between">
+				  <text>任勇强</text>
+					<text>13296905340</text>
+				</view>
+				<view class="subBox">
+				  内蒙古呼和浩特市玉泉区恒盛广场C座14楼益点集团
+				</view>
+			</view>
+		</view>
+		<view class="product">
+			<image src="../../assets/images/detailBannerImg.jpg"></image>
+			<view class="textBox">
+				<text>普通韩式X展架 易拉宝海报架 经济X架广告</text>
+				<text>展架 60*160 80*180cm</text>
+				<view class="flex justify-end">
+					<van-stepper value="{{ 1 }}" bind:change="onChange" />
+				</view>
+			</view>
+		</view>
+		<view class="price">
+			<van-cell-group>
+				<van-cell title="商品总价" value="￥72.00" />
+				<van-cell title="运费" value="免运费" />
+			</van-cell-group>
+		</view>
+		<view class="info">
+			<van-cell-group>
+				<van-cell title="配送时间" value="定稿制作第二天送达(次日达仅限呼和浩特市)" />
+				<van-cell title="发票" value="如需要开发票，请到‘我的-开具发票’开具" />
+				<van-cell title="支付方式" value="设计制作总价的30%" />
+			</van-cell-group>
+		</view>
+		<!-- <view class="designMain" catchtap="goToDesign">
             <image src="../../assets/images/headerImg.jpg" mode="widthFix"></image>
             <view class="designBox">
                 <view class="flex align-center justify-between">
@@ -40,13 +49,17 @@
                 </view>
                 <view>高级UI设计师</view>
             </view>
-        </view>
-        <view class="footerMenu flex align-center justify-between">
-            <view>
-                72.00\
-                <text>21.6</text>
-            </view>
-            <button>立即支付</button>
-        </view>
-    </view>
+        </view> -->
+		<view class="footerMenu flex align-center justify-between">
+			<view>
+				72.00\
+				<text>21.6</text>
+			</view>
+			<view class="flex align-center">
+                <text class="cuIcon-servicefill lg text-red"></text>
+				<button catchtap="paySuccessTap">立即支付</button>
+			</view>
+		</view>
+        <view class="footerTip">支付全款的30%，剩余70%待设计定稿制作时支付！</view>
+	</view>
 </view>

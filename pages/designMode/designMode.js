@@ -66,5 +66,8 @@ Page({
   },
   goToClassifyTap(){
      app.Tools.goTo('/pages/classify/classify','nav');
+  },
+  goToOnlineClassifyTap(){
+    app.Tools.goTo('/pages/onlineMake/onlineMake','nav');
   }
 })

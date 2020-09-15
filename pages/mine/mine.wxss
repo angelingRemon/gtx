@@ -60,11 +60,15 @@
 .mineIconMenuMain{
   padding:20rpx 20rpx 40rpx;
 }
+.mineIconMenuBox view{
+  width:100%;
+}
 .mineIconMenuBox view .fontIcon{
   display:block;
   font-size:60rpx;
   color:#e23308;
   margin:0 atuo;
+  text-align:center;
 }
 .mineIconMenuBox view text{
   font-size:28rpx;

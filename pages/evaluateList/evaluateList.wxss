@@ -1,0 +1,69 @@
+/* pages/evaluateList/evaluateList.wxss */
+page{
+  background:#fff;
+}
+.productView{
+  padding:30rpx;
+}
+.productView .h3{
+  font-size:36rpx;
+  font-weight:bold;
+}
+.productView .p{
+  font-size:28rpx;
+  color:#999;
+}
+.starView{
+  padding:30rpx;
+}
+.starView>view:first-of-type{
+  font-size:32rpx;
+}
+.tipView{
+  padding:30rpx 30rpx 10rpx;
+}
+.tipView view{
+  height:60rpx;
+  line-height:60rpx;
+  text-align:center;
+  padding:0 20rpx;
+  font-size:28rpx;
+  background:#fff1ee;
+  margin:0 10rpx 20rpx;
+}
+.titleView{
+  padding:0 30rpx;
+}
+.titleView view{
+  height:60rpx;
+  line-height:60rpx;
+  background:#f1f1f1;
+  padding:0 20rpx;
+}
+.evaluateBody{
+  padding:30rpx 50rpx;
+}
+.evaluateItemTop image{
+  width:40rpx;
+  display:block;
+  margin-right:20rpx;
+}
+.evaluateItemTop view text{
+ display:block;
+ font-weight:bold;
+ font-size:24rpx;
+}
+.evaluateItemSub{
+  padding:20rpx 0 40rpx;
+  font-size:28rpx;
+  color:#333;
+  line-height:34rpx;
+  text-align:justify;
+}
+.viewMore{
+  height:100rpx;
+  line-height:100rpx;
+  text-align:center;
+  font-size:28rpx;
+  color:#333;
+}

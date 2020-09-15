@@ -1,0 +1,31 @@
+<!--pages/evaluate/evaluate.wxml-->
+<view class="evaluateMain">
+  <!-- product -->
+  <view class="evaluateProBox solid-bottom">
+    <text class="h3">X展架</text>
+    <text class="p">普通韩式X展架 易拉宝海报架 经济X架</text>
+    <text class="p">广告展架 60*160 80*180cm</text>
+  </view>
+  <!-- star -->
+  <view class="evaluateStarBox">
+    <view class="evaluateText">{{text[value-1]}}</view>
+    <view class="evaluateStar flex justify-center">
+      <van-rate value="{{ value }}" icon="like" size="{{ 40 }}" void-icon="like-o" bind:change="onChange" color="#e23308" />
+    </view>
+    <view class="evaluateTip flex flex-wrap justify-center">
+      <view class="active">设计师牛逼</view>
+      <view>客服回复及时</view>
+      <view>配送很快</view>
+      <view>配送员服务态度好</view>
+      <view>设计师服务态度好</view>
+    </view>
+    <view class="evaluateEdit">
+      <van-cell-group>
+        <van-field value="{{ message }}" type="textarea" placeholder="写下您对配送和商家的评价吧~~~" autosize border="{{ false }}" />
+      </van-cell-group>
+    </view>
+    <view class="btn">
+      <button class="cu-btn bg-red margin-tb-sm lg" role="button" aria-disabled="false">确认提交</button>
+    </view>
+  </view>
+</view>

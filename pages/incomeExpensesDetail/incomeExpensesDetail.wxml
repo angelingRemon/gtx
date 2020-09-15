@@ -1,0 +1,75 @@
+<!--pages/incomeExpensesDetail/incomeExpensesDetail.wxml-->
+<view class="incomeExpensesMain">
+  <view class="incomeExpensesNav">
+    <van-tabs bind:click="onClick">
+      <van-tab title="收入">
+        <view class="incomeListBox">
+          <view class="incomeItem solid-bottom">
+            <view class="top flex align-center justify-between">
+              <text>制作返现</text>
+              <view>+
+                <text>12.00</text>
+              </view>
+            </view>
+            <view class="sub flex align-center justify-between">
+              <view>制作费用：1245.00</view>
+              <text>2020-05-20 14:00:56</text>
+            </view>
+          </view>
+          <view class="incomeItem solid-bottom">
+            <view class="top flex align-center justify-between">
+              <text>直属制作返现</text>
+              <view>+
+                <text>12.00</text>
+              </view>
+            </view>
+            <view class="sub flex align-center justify-between">
+              <view>制作费用：1245.00</view>
+              <text>2020-05-20 14:00:56</text>
+            </view>
+          </view>
+          <view class="incomeItem solid-bottom">
+            <view class="top flex align-center justify-between">
+              <text>间属制作返现</text>
+              <view>+
+                <text>12.00</text>
+              </view>
+            </view>
+            <view class="sub flex align-center justify-between">
+              <view>制作费用：1245.00</view>
+              <text>2020-05-20 14:00:56</text>
+            </view>
+          </view>
+        </view>
+      </van-tab>
+      <van-tab title="支出">
+        <view class="expensesListBox">
+          <view class="expensesItem solid-bottom">
+            <view class="top flex align-center justify-between">
+              <text>提现</text>
+              <view>-
+                <text>12.00</text>
+              </view>
+            </view>
+            <view class="sub flex align-center justify-between">
+              <view class="red">处理中</view>
+              <text>2020-05-20 14:00:56</text>
+            </view>
+          </view>
+          <view class="expensesItem solid-bottom">
+            <view class="top flex align-center justify-between">
+              <text>提现</text>
+              <view>-
+                <text>12.00</text>
+              </view>
+            </view>
+            <view class="sub flex align-center justify-between">
+              <view class="green">已到账</view>
+              <text>2020-05-20 14:00:56</text>
+            </view>
+          </view>
+        </view>
+      </van-tab>
+    </van-tabs>
+  </view>
+</view>

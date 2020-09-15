@@ -1,0 +1,80 @@
+<!-- pages/orders/orders.wxml -->
+<view class="ordersMain">
+  <view class="ordersBox">
+    <view class="ordersTab">
+      <scroll-view scroll-x class="nav text-center flex justify-around">
+        <view class="cu-item {{0==TabCur?'cur':''}}" bindtap="tabSelect" data-id="0">
+          <text class="cuIcon-sponsorfill"></text>
+          设计中
+        </view>
+        <view class="cu-item {{1==TabCur?'cur':''}}" bindtap="tabSelect" data-id="1">
+          <text class="cuIcon-formfill"></text>
+          待定稿
+        </view>
+        <view class="cu-item {{2==TabCur?'cur':''}}" bindtap="tabSelect" data-id="2">
+          <text class="cuIcon-paintfill"></text>
+          待制作
+        </view>
+        <view class="cu-item {{3==TabCur?'cur':''}}" bindtap="tabSelect" data-id="3">
+          <text class="cuIcon-clothesfill"></text>
+          已完成
+        </view>
+        <view class="cu-item {{4==TabCur?'cur':''}}" bindtap="tabSelect" data-id="4">
+          <text class="cuIcon-appreciatefill"></text>
+          待评价
+        </view>
+      </scroll-view>
+    </view>
+    <view class="ordersContent">
+      <view class="ordersItem" wx:for="{{[1,1]}}">
+        <view class="orderHeader flex align-center justify-between" catchtap="goToDetail">
+          <text>X展架</text>
+          <view>已完成</view>
+        </view>
+        <view class="orderTime" catchtap="goToDetail">
+          <text class="cuIcon-timefill"></text>
+          2020年7月20日 10:10:54
+        </view>
+        <view class="info" catchtap="goToDetail">
+          <view class="green">普通韩式X展架 易拉宝海报架 经济X架</view>
+          <view class="orange">广告展架 60*160 80*180cm</view>
+        </view>
+        <view class="btn">
+          <button class="cu-btn round line-green" role="button" aria-disabled="false">确认收货</button>
+          <button class="cu-btn round line-yellow" role="button" aria-disabled="false" catchtap="goToEvaluate">
+            去评价
+          </button>
+          <button class="cu-btn round line-red" role="button" aria-disabled="false">定稿</button>
+        </view>
+      </view>
+      <view class="ordersItem" wx:for="{{[1,1]}}" catchtap="goToOnlineDetail">
+        <view class="orderHeader flex align-center justify-between">
+          <text>易拉宝</text>
+          <view>已完成</view>
+        </view>
+        <view class="orderTime">
+          <text class="cuIcon-timefill"></text>
+          2020年7月20日 10:10:54
+        </view>
+        <view class="info">
+          <view class="green">普通韩式X展架 易拉宝海报架 经济X架</view>
+          <view class="orange">广告展架 60*160 80*180cm</view>
+        </view>
+      </view>
+      <view class="ordersItem" wx:for="{{[1,1]}}" catchtap="goToHasdraftDetail">
+        <view class="orderHeader flex align-center justify-between">
+          <text>有稿制作-易拉宝</text>
+          <view>已完成</view>
+        </view>
+        <view class="orderTime">
+          <text class="cuIcon-timefill"></text>
+          2020年7月20日 10:10:54
+        </view>
+        <view class="info">
+          <view class="green">普通韩式X展架 易拉宝海报架 经济X架</view>
+          <view class="orange">广告展架 60*160 80*180cm</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

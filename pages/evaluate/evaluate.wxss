@@ -1,0 +1,62 @@
+/* pages/evaluate/evaluate.wxss */
+page{
+  background:#fff;
+}
+.evaluateMain{
+  padding:30rpx;
+}
+.evaluateProBox {
+  padding-bottom:20rpx;
+}
+.evaluateProBox text{
+  display:block;
+}
+.evaluateProBox text.h3{
+  font-size:36rpx;
+  color:#333;
+  line-height:40rpx;
+  font-weight:bold;
+  padding-bottom:10rpx;
+}
+.evaluateProBox text.p{
+  color:#999;
+  line-height:36rpx;
+}
+.evaluateStarBox{
+  padding:40rpx 0;
+}
+.evaluateText{
+  text-align:center;
+  font-size:42rpx;
+  color:#333;
+  font-weight:bold;
+}
+.evaluateStar{
+  padding-top:30rpx;
+}
+.evaluateTip{
+  padding:40rpx 0;
+}
+.evaluateTip>view{
+  border:1px solid #999;
+  border-radius:20rpx;
+  padding:15rpx 20rpx;
+  margin:0 10rpx 20rpx;
+}
+.evaluateTip>view.active{
+  border-color:#e23308;
+  color:#e23308;
+}
+.evaluateEdit{
+  height:300rpx;
+  border:1px solid #f1f1f1;
+  border-radius:20rpx;
+  overflow:hidden;
+  line-height:38rpx;
+}
+.btn{
+  padding-top:40rpx;
+}
+.btn button{
+  width:100% !important;
+}

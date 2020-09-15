@@ -20,7 +20,7 @@
            <view class="indexMenuItem" catchtap="goToMakeModeTap">
             <image src="../../assets/images/indexMenuZzbIcon.png" mode="widthFix"></image>
           </view>
-           <view class="indexMenuItem" catchtap="goToClassifyTap">
+           <view class="indexMenuItem" catchtap="goToProductSectionTap">
             <image src="../../assets/images/indexMenuFlbIcon.png" mode="widthFix"></image>
           </view>
            <view class="indexMenuItem" catchtap="goToServiceTap">

@@ -7,17 +7,13 @@ Page({
   data: {
     cardCur: 0,
     swiperList: [{
-      id: 0,
-      type: 'image',
-      url: '../../assets/images/shareBannerImg.jpg'
-    }, {
       id: 1,
       type: 'image',
       url: '../../assets/images/shareBannerImg2.jpg'
     }, {
       id: 2,
       type: 'image',
-      url: '../../assets/images/shareBannerImg3.jpg'
+      url: '../../assets/images/shareBannerImg2.jpg'
     }],
   },
 

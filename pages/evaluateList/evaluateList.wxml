@@ -1,0 +1,40 @@
+<view class="evaluteListMain">
+  <view class="productView solid-bottom flex align-center justify-between">
+    <text class="h3">普通X展架</text>
+    <text class="p">月销：89</text>
+  </view>
+  <view class="starView solid-bottom flex align-center justify-between">
+    <view>综合评分：{{value}}分</view>
+    <view>
+      <van-rate value="{{ value }}" size="{{ 25 }}" allow-half color="#e23308" void-color="#eee" void-icon="star" bind:change="onChange" />
+    </view>
+  </view>
+  <view class="tipView flex flex-wrap">
+    <view>标签一</view>
+    <view>标签一</view>
+    <view>标签一</view>
+    <view>标签一</view>
+  </view>
+  <view class="titleView">
+    <view>最新评论</view>
+  </view>
+  <view class="evaluateBody">
+    <view class="evaluateList">
+      <view class="evaluateItem" wx:for="{{[1,1,1]}}">
+        <view class="evaluateItemTop flex align-center">
+          <image src="../../assets/images/userIcon.png" mode="widthFix"></image>
+          <view>
+            <text>用户A</text>
+            <van-rate readonly value="{{ value }}" color="#df463c" void-color="#f1f1f1" size="10" />
+          </view>
+        </view>
+        <view class="evaluateItemSub">
+          平台设计师出图很快，设计效果很好，沟通也很便捷，设计师很了解呵护需求，制作也快 按时送了过来，东西挺好交易完成后梵返现的钱我已经提现了.
+        </view>
+      </view>
+      <view class="viewMore" catchtap="goToEvaluteListTap">
+        <text>查看更多</text>
+      </view>
+    </view>
+  </view>
+</view>

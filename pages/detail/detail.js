@@ -17,7 +17,8 @@ Page({
         id: 2,
         url: '../../assets/images/detailBannerImg.jpg',
       }] ,
-      value:4
+      value:4,
+      specificationShow:false
   },
 
   /**
@@ -76,6 +77,19 @@ Page({
 
   },
   onClickButton: function(){
-    app.Tools.goTo('/pages/design/design','nav');
+    app.Tools.goTo('/pages/comfirm/comfirm','nav');
+  },
+  goToEvaluteListTap(){
+    app.Tools.goTo('/pages/evaluateList/evaluateList','nav');
+  },
+  // 选择规格
+  specificationTap(){
+    this.setData({ specificationShow: true });
+  },
+  onClose() {
+    this.setData({ specificationShow: false });
+  },
+  onChange(event) {
+    console.log(event.detail);
   }
 })

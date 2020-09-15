@@ -1,0 +1,169 @@
+<van-search value="{{ value }}" placeholder="请输入搜索关键词(例如：喷绘布)" background="#fff" use-action-slot bind:change="onChange" bind:search="onSearch">
+	<view slot="action" bind:tap="onClick">搜索</view>
+</van-search>
+<view class="main">
+	<view class="categroy-left solid-right solid-bottom">
+		<view wx:for="{{category}}" wx:key="index" data-id="{{item.id}}" data-index="{{index}}" bindtap="switchTab" class="cate-list {{curIndex === index?'on':''}}">{{item.name}}</view>
+	</view>
+	<scroll-view class="categroy-right" scroll-y="{{isScroll}}" scroll-into-view="{{toView}}" scroll-with-animation="true">
+		<!-- <block wx:for="{{detail}}" wx:for-index wx:key="idx">
+            <view id="{{item.id}}" class="cate-box">
+                <view class="cate-banner">
+                    <image src="../../../image/c1.png"></image>
+                </view>
+                <view class="cate-title">
+                    <text>{{item.cate}}</text>
+                </view>
+                <view class="product">
+                    <view class="product-list" wx:for="{{item.detail}}" wx:key="index" wx:for-item="val">
+                        <navigator url="../list/list">
+                            <image src="{{val.thumb}}"></image>
+                            <view class="classname"><text>{{val.name}}</text></view>
+                        </navigator>
+                    </view>
+                </view>
+            </view>
+        </block>  -->
+		<block>
+			<view id="guowei" class="cate-box">
+				<view class="cate-banner">
+					<image src="../../assets/images/classifyBannerImg.jpg"></image>
+				</view>
+				<view class="cate-title">
+					<text>热门服务</text>
+				</view>
+				<view class="product">
+					<view class="product-list" catchtap="goToSbconTap">
+						<navigator url="">
+							<image src="../../assets/images/onlineClassIcon/1.jpg" mode="widthFix"></image>
+							<view class="classname"><text>LOGO设计</text></view>
+						</navigator>
+					</view>
+					<view class="product-list" catchtap="goToSbconTap">
+						<navigator url="">
+							<image src="../../assets/images/onlineClassIcon/4.jpg" mode="widthFix"></image>
+							<view class="classname"><text>小程序开发</text></view>
+						</navigator>
+					</view>
+					<view class="product-list" catchtap="goToSbconTap">
+						<navigator url="">
+							<image src="../../assets/images/onlineClassIcon/3.jpg" mode="widthFix"></image>
+							<view class="classname"><text>APP开发</text></view>
+						</navigator>
+					</view>
+					<view class="product-list" catchtap="goToSbconTap">
+						<navigator url="">
+							<image src="../../assets/images/onlineClassIcon/6.jpg" mode="widthFix"></image>
+							<view class="classname"><text>网站建设</text></view>
+						</navigator>
+					</view>
+					<view class="product-list" catchtap="goToSbconTap">
+						<navigator url="">
+							<image src="../../assets/images/onlineClassIcon/5.jpg" mode="widthFix"></image>
+							<view class="classname"><text>网站代运营</text></view>
+						</navigator>
+					</view>
+					<view class="product-list" catchtap="goToSbconTap">
+						<navigator url="">
+							<image src="../../assets/images/onlineClassIcon/2.jpg" mode="widthFix"></image>
+							<view class="classname"><text>文案策划</text></view>
+						</navigator>
+					</view>
+					<view class="product-list" catchtap="goToSbconTap">
+						<navigator url="">
+							<image src="../../assets/images/onlineClassIcon/7.jpg" mode="widthFix"></image>
+							<view class="classname"><text>网络运营</text></view>
+						</navigator>
+					</view>
+					<view class="product-list" catchtap="goToSbconTap">
+						<navigator url="">
+							<image src="../../assets/images/onlineClassIcon/8.jpg" mode="widthFix"></image>
+							<view class="classname"><text>网络运营</text></view>
+						</navigator>
+					</view>
+					<view class="product-list" catchtap="goToSbconTap">
+						<navigator url="">
+							<image src="../../assets/images/onlineClassIcon/9.jpg" mode="widthFix"></image>
+							<view class="classname"><text>三维建模</text></view>
+						</navigator>
+					</view>
+				</view>
+				<view class="cate-title">
+					<text>设计热搜</text>
+				</view>
+				<view class="product productTitle">
+					<view>包装设计</view>
+					<view>vi设计</view>
+					<view>宣传册设计</view>
+					<view>网页设计</view>
+					<view>工业设计</view>
+					<view>装修设计</view>
+					<view>ppt设计</view>
+					<view>名片设计</view>
+					<view>详情页设计</view>
+				</view>
+				<view class="cate-title">
+					<text>开发热搜</text>
+				</view>
+				<view class="product productTitle">
+					<view>游戏开发</view>
+					<view>企业网站</view>
+					<view>软件开发</view>
+					<view>工具软件开发</view>
+					<view>智能硬件开发</view>
+					<view>公众号开发</view>
+				</view>
+					<view class="cate-title">
+					<text>更多推荐</text>
+				</view>
+				<view class="product productTitle">
+					<view>商业策划</view>
+					<view>配音配音</view>
+					<view>广告宣传动画</view>
+					<view>图片处理</view>
+					<view>购物空间</view>
+					<view>工程效果图</view>
+					<view>3d建模</view>
+					<view>vr效果图</view>
+					<view>建筑设计</view>
+				</view>
+			</view>
+		</block>
+		<block>
+			<view id="shucai" class="cate-box">
+				<view class="cate-banner">
+					<image src="../../assets/images/classifyBannerImg.jpg"></image>
+				</view>
+				<view class="cate-title">
+					<text>数码产品</text>
+				</view>
+				<view class="product">
+					<view class="product-list">
+						<navigator url="">
+							<image src="../../assets/images/onlineClassIcon/3.jpg"></image>
+							<view class="classname"><text>品牌设计</text></view>
+						</navigator>
+					</view>
+					<view class="product-list">
+						<navigator url="">
+							<image src="../../assets/images/onlineClassIcon/3.jpg"></image>
+							<view class="classname"><text>品牌设计</text></view>
+						</navigator>
+					</view>
+					<view class="product-list">
+						<navigator url="">
+							<image src="../../assets/images/onlineClassIcon/3.jpg"></image>
+							<view class="classname"><text>品牌设计</text></view>
+						</navigator>
+					</view>
+					<view class="product-list">
+						<navigator url="">
+							<image src="../../assets/images/onlineClassIcon/3.jpg"></image>
+							<view class="classname"><text>品牌设计</text></view>
+						</navigator>
+					</view>
+				</view>
+			</view>
+		</block>
+	</scroll-view>
+</view>

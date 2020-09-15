@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "产品部",
+  "usingComponents": {
+    "van-search": "@vant/weapp/search/index"
+  }
+}

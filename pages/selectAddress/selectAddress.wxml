@@ -1,0 +1,12 @@
+<!--pages/address/address.wxml-->
+<view class="addressMain">
+  <view class="addressItem" wx:for="{{list}}" wx:key="{{item.id}}">
+    <view class="addressTop flex align-center justify-between">
+      <view class="flex align-center">{{item.name}}<text wx:if="{{item.isDefault}}">默认</text></view>
+      <view>{{item.phone}}</view>
+    </view>
+    <view class="addressMiddle">
+      {{item.address}}
+    </view>
+  </view>
+</view>

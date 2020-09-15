@@ -1,0 +1,91 @@
+<!--pages/productSection/productSection.wxml-->
+<view class="productSectionMain">
+  <!-- search -->
+  <view class="searchMain">
+    <van-search value="{{ value }}" placeholder="请输入搜索关键词" use-action-slot bind:change="onChange" bind:search="onSearch">
+      <view slot="action" bind:tap="onClick">搜索</view>
+    </van-search>
+  </view>
+  <!-- banner -->
+  <view class="bannerMain">
+    <swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+      <swiper-item wx:for="{{swiperList}}" wx:key>
+        <image src="{{item.url}}" mode="widthFix"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 热门服务 -->
+  <view class="titleMain">
+    <text>热门服务</text>
+  </view>
+  <view class="hotProductMain">
+    <view class="cu-list grid no-border col-4">
+      <view class="cu-item" wx:for="{{iconList}}" wx:key="{{index}}">
+        <image src="../../assets/images/onlineClassIcon/{{item.icon}}" mode="widthFix"></image>
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- 线下热搜 -->
+  <view class="titleMain">
+    <text>线下热搜</text>
+  </view>
+  <view class="hotSearchMain">
+    <view class="hotSearchBox">
+      <view class="classname">展架</view> 
+      <view class="classname">喷绘布</view>
+      <view class="classname">条幅</view>
+      <view class="classname">三折页</view>
+      <view class="classname">宣传单页</view>
+      <view class="classname">画册</view>
+      <view class="classname">名片</view>
+      <view class="classname">KT版</view>
+      <view class="classname">亚克力</view>
+      <view class="classname">卡布灯箱</view>
+      <view class="classname">墙体彩绘</view>
+      <view class="classname">背胶帖</view>
+    </view>
+    <view class="viewMoreBox">
+      <view class="flex align-center justify-center bg-red light">更多线下产品请联系客服<text class="cuIcon-right lg text-red"></text></view>
+    </view>
+  </view>
+  <!-- 线上热搜 -->
+  <view class="titleMain">
+    <text>线上热搜</text>
+  </view>
+  <view class="hotSearchMain">
+    <view class="hotSearchBox">
+      <view class="classname">VI设计</view> 
+      <view class="classname">LOGO设计</view>
+      <view class="classname">宣传册设计</view>
+      <view class="classname">详情页设计</view>
+      <view class="classname">UI设计</view>
+      <view class="classname">画册设计</view>
+      <view class="classname">小程序设计</view>
+      <view class="classname">网站设计</view>
+      <view class="classname">APP设计</view>
+      <view class="classname">软件开发</view>
+      <view class="classname">公众号开发</view>
+      <view class="classname">网站维护</view>
+    </view>
+    <view class="viewMoreBox">
+      <view class="flex align-center justify-center bg-red light">更多线上产品请联系客服<text class="cuIcon-right lg text-red"></text></view>
+    </view>
+  </view>
+  <!-- 更多推荐 -->
+  <view class="titleMain">
+    <text>更多推荐</text>
+  </view>
+  <view class="hotSearchMain">
+    <view class="hotSearchBox">
+      <view class="classname">商业策划</view> 
+      <view class="classname">视频配音</view>
+      <view class="classname">宣传动画</view>
+      <view class="classname">效果图</view>
+      <view class="classname">3D建模</view>
+      <view class="classname">VR效果图</view>
+      <view class="classname">建筑设计</view>
+      <view class="classname">品牌策划</view>
+    </view>
+  </view>
+</view>

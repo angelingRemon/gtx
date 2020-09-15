@@ -1,4 +1,5 @@
 // pages/makeMode/makeMode.js
+const app = getApp();
 Page({
 
   /**
@@ -62,5 +63,11 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  goToDesignMode(){
+    app.Tools.goTo('/pages/designMode/designMode','nav');
+  },
+  goToSbconServiceTap(){
+    app.Tools.goTo('/pages/serviceSbcon/serviceSbcon','nav');
   }
 })

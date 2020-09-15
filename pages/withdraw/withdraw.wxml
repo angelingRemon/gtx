@@ -1,0 +1,19 @@
+<!--pages/withdraw/withdraw.wxml-->
+<view class="withdrawMain">
+  <view class="moneyBox">
+    <text>可提现金额</text>
+    <view>2562.56<text>元</text></view>
+  </view>
+  <view class="inputBox">
+    <text>提现到微信零钱</text>
+    <view class="input">
+       <image src="../../assets/images/yangIcon.png" mode="widthFix"></image>
+       <input class="moneyInput" text="number" placeholder="请输入提现金额" placeholder-class="inputPls"></input>
+       <button class="cu-btn round line-red" role="button" aria-disabled="false">全部提现</button>
+    </view>
+    <view class="tip">提现收取每笔3元+9个点的手续费，预计一个工作日内到账！</view>
+  </view>
+  <view class="btn">
+    <button class="cu-btn bg-red margin-tb-sm lg" role="button" aria-disabled="false">确认提交</button>  
+  </view>
+</view>

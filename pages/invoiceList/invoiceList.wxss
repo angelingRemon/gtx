@@ -1,0 +1,49 @@
+/* pages/invoiceList/invoiceList.wxss */
+.invoiceListMain .van-notice-bar{
+   position:fixed;
+   width:100%;
+   left:0;
+   top:0;
+   z-index:999;
+}
+.invoiceListBox{
+  padding:40px 30rpx 30rpx;
+}
+.invoiceItem{
+  margin-top:30rpx;
+  background:#fff;
+  padding:20rpx;
+}
+.orderNum{
+  padding-bottom:20rpx;
+  font-size:28rpx;
+}
+.productInfo{
+  padding:20rpx 0 25rpx;
+}
+.productInfo .top{
+  line-height:60rpx;
+}
+.productInfo .top>text:first-of-type{
+  font-weight:bold;
+  font-size:32rpx;
+}
+.productInfo .top>text:last-of-type{
+  font-size:28rpx;
+}
+.productInfo .sub{
+  font-size:28rpx;
+  color:#ccc;
+}
+.moneyBox{
+  padding-top:20rpx;
+}
+.moneyBox view text{
+  font-size:32rpx;
+  color:#e23308;
+  font-weight:bold;
+}
+.moneyBox button{
+  width:200rpx !important;
+  margin:0 !important;
+}

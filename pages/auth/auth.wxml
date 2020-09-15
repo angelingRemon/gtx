@@ -1,0 +1,38 @@
+<view class="identityAuthenticationMain">
+  <form bindsubmit="formSubmit">
+    <view class="title">
+      <view class="name">个人基本信息认证</view>
+      <view class="tip">为了有效保障您的资金安全，减少提现给您带来不必要的麻烦，
+        <text>请填写与您身份证一致的信息，且一张身份证只能认证一次！</text>
+      </view>
+    </view>
+    <view class="inputBody">
+      <view class="inputItem">
+        <text>真实姓名</text>
+        <view class="solid-bottom">
+          <input type="text" placeholder="请填写您本人的真实姓名" name="real_name" maxlength="10" />
+        </view>
+      </view>
+      <view class="inputItem">
+        <text>身份证号</text>
+        <view class="solid-bottom">
+          <input type="text" placeholder="请填写您本人的身份证号" name="certId" maxlength='18' />
+        </view>
+      </view>
+      <view class="inputItem">
+        <text>手机号码</text>
+        <view class="solid-bottom">
+          <input placeholder="请填写您本人的手机号码" type='number' maxlength='11' name="phone" />
+        </view>
+      </view>
+      <view class="inputItem">
+        <text>验证码</text>
+        <view class="solid-bottom">
+          <input placeholder="请填写验证码" type='number' maxlength='6' name="verifyCode" />
+          <text>获取验证码</text>
+        </view>
+      </view>
+    </view>
+    <button class="btn" form-type="submit">提交认证</button>
+  </form>
+</view>

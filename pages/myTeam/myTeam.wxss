@@ -1,0 +1,155 @@
+/* pages/myTeam/myTeam.wxss */
+
+.myTeamListMain {
+  padding: 0 30rpx;
+}
+
+.myTeamPerformanceMain {
+  padding-top: 10rpx;
+}
+
+.myTeamPerformanceMain>text {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  line-height: 120rpx;
+}
+
+.myTeamPerformanceBox {
+  padding: 20rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+
+.myTeamPerformanceItem {
+  width: 50%;
+  float: left;
+  text-align: center;
+  padding: 30rpx 0;
+}
+
+.myTeamPerformanceItem>text {
+  display: block;
+}
+
+.myTeamPerformanceItem>text:first-of-type {
+  font-size: 28rpx;
+}
+
+.myTeamPerformanceItem>text:nth-of-type(2n) {
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #333;
+  padding: 10rpx 0 5rpx;
+}
+
+.myTeamPerformanceItem>view {
+  font-size: 24rpx;
+  color: #f33;
+}
+
+.myReferrerMain {
+  padding-top: 20rpx;
+}
+
+.myReferrerMain>text {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  line-height: 120rpx;
+}
+
+.myReferrerBox {
+  padding: 30rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+
+.myReferrerBox image {
+  width: 100rpx;
+  height: 100rpx;
+  display: block;
+  float: left;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.myReferrerBox view {
+  width: 300rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 32rpx;
+  float: left;
+  padding: 0 20rpx;
+  font-weight: bold;
+}
+
+.myReferrerBox .icon {
+  color: #e23308;
+  float: right;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.directDriveMain {
+  padding-top:20rpx;
+}
+
+.directDriveMain>text {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  line-height: 120rpx;
+}
+
+.directDriveItem {
+  padding:30rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  margin-bottom: 30rpx;
+}
+
+.top>view image {
+  width: 100rpx;
+  height: 100rpx;
+  display: block;
+  border-radius: 50%;
+}
+
+.top>view text {
+  width: 300rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 32rpx;
+  padding: 0 20rpx;
+  font-weight: bold;
+  display:block;
+}
+.top .icon{
+  color:#e23308;
+}
+.sub{
+  padding:30rpx 0 10rpx;
+}
+.sub>text{
+  color:#999;
+  font-size:28rpx;
+}
+.teamPerformanceBox{
+  overflow:hidden;
+  padding-top:10rpx;
+}
+.teamPerformanceBox>view{
+  width:50%;
+  float:left;
+  font-size:24rpx;
+  line-height:40rpx;
+}
+.rotate{
+  transform:rotate(180deg);  
+}

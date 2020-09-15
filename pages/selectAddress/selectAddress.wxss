@@ -1,0 +1,29 @@
+/* pages/address/address.wxss */
+.addressMain{
+  padding:20rpx;
+}
+.addressItem{
+  background:#fff;
+  margin-bottom:20rpx;
+  padding:25rpx 30rpx;
+  border-radius:10rpx;
+}
+.addressTop{
+  padding-bottom:20rpx;
+}
+.addressTop view{
+  font-size:36rpx;
+}
+.addressTop view:first-of-type{
+  font-weight:bold;
+}
+.addressTop view:first-of-type text{
+  font-size:28rpx;
+  color:#fff;
+  background-color:#e23308;
+  margin-left:10rpx;
+  padding:0 10rpx;
+}
+.addressMiddle{
+  font-size:28rpx;
+}

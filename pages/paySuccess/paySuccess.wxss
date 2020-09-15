@@ -1,0 +1,38 @@
+/* pages/paySuccess/paySuccess.wxss */
+page{
+    background:#fff;
+}
+.paySuccessMain{
+    padding-top:15%;
+}
+.paySuccessMain>image{
+    width:250rpx;
+    height:250rpx;
+    display: block;
+    margin:0 auto;
+}
+.subTip{
+    text-align:center;
+    padding-top:30rpx;
+}
+.subTip view:first-of-type{
+    font-size:38rpx;
+}
+.subTip view:first-of-type text{
+    font-weight:bold;
+}
+.subTip view:last-of-type{
+    font-size:28rpx;
+    color:#999;
+    padding-top:20rpx;
+}
+.subTip view:last-of-type text{
+    font-weight:bold;
+    color:#e23308;
+}
+.jumpDesign{
+    padding-top:70rpx;
+    text-align: center;
+    font-weight:bold;
+    font-size:36rpx;
+}

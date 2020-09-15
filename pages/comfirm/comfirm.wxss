@@ -4,7 +4,7 @@
     background:#e23308;
 }
 .comfirmBox{
-   padding:0 30rpx;
+   padding:0 30rpx 180rpx;
 }
 .address{
     background:#fff;
@@ -86,14 +86,18 @@
     padding:20rpx 30rpx;
     box-sizing:border-box;
 }
-.footerMenu view{
+.footerMenu view:first-of-type{
     font-size:32rpx;
     color:#ccc;
     font-weight:bold;
 }
-.footerMenu view text{
+.footerMenu view:first-of-type text{
     font-size:50rpx;
     color:#e23308;
+}
+.footerMenu view:last-of-type text{
+    font-size:60rpx;
+    margin-right:30rpx;
 }
 .footerMenu button{
     margin:0 !important;
@@ -106,5 +110,41 @@
     float:right;
     color:#fff;
     border-radius:80rpx;
-
+}
+.footerTip{
+    position:fixed;
+    width:100%;
+    left:0;
+    bottom:115rpx;
+    background:#fff;
+    box-sizing:border-box;  
+    text-align:center;
+    color:#e23308;
+    font-size:28rpx;
+    padding-top:20rpx;
+}
+.addressBox{
+   padding-right:40rpx;
+   position:relative;
+}
+.addressBox:after{
+    content:"";
+    display: block;
+    width:18rpx;
+    height:18rpx;
+    border-right:4rpx solid #ccc;
+    border-bottom:4rpx solid #ccc;
+    transform:rotate(-45deg);
+    position:absolute;
+    right:0;
+    top:50%;
+    margin-top:-8rpx;
+}
+.subBox{
+    padding-top:10rpx;
+    text-align:justify;
+}
+.topBox{
+    font-size:32rpx;
+    font-weight:bold;
 }

@@ -11,15 +11,15 @@
 	<!-- 数据 -->
 	<view class="mineDataMain">
 		<view class="mineDataBox flex justify-around">
-			<view class="solid-right">
+			<view class="solid-right" catchtap="goToWalletTap">
 				<text>130</text>
 				<text>钱包余额</text>
 			</view>
-			<view class="solid-right">
+			<view class="solid-right" catchtap="goToWalletTap">
 				<text>99</text>
 				<text>我的收益</text>
 			</view>
-			<view>
+			<view catchtap="goToMyClientTap">
 				<text>5</text>
 				<text>我的客户</text>
 			</view>
@@ -36,9 +36,9 @@
 				<van-icon name="gold-coin" class="fontIcon" />
 				<text>钱包</text>
 			</view>
-			<view>
-				<van-icon name="balance-list" class="fontIcon" />
-				<text>发票</text>
+			<view catchtap="goToMyTeamTap">
+				<van-icon name="friends" class="fontIcon" />
+				<text>团队</text>
 			</view>
 			<view catchtap="goToShareImage">
 				<van-icon name="invition" class="fontIcon" />
@@ -49,7 +49,7 @@
 	<!-- 其他按钮 -->
 	<view class="mineOtherMenuMian">
 		<van-cell-group>
-			<van-cell value="最近有5个订单" icon="orders-o" is-link>
+			<van-cell value="最近有5个订单" icon="orders-o" is-link url="/pages/orders/orders">
 				<view slot="title" class="flex align-center">
 					<view class="van-cell-text">我的订单</view>
 					<van-tag type="danger" style="position:relative;top:-2rpx;margin-left:10rpx;">5</van-tag>
@@ -58,9 +58,11 @@
 		</van-cell-group>
 		<view class="navView"></view>
 		<van-cell-group>
-			<van-cell title="客服中心" icon="service-o" is-link />
-			<van-cell title="常见问题" icon="question-o" is-link />
-			<van-cell title="意见反馈" icon="smile-o" is-link />
+			<van-cell title="基本信息认证" icon="manager-o" is-link value="暂未认证" url="/pages/auth/auth" />
+			<van-cell title="收货地址管理" icon="location-o" is-link url="/pages/address/address"/>
+            <van-cell title="开具发票" icon="bill-o" is-link url="/pages/invoiceList/invoiceList"/>
+			<van-cell title="常见问题" icon="question-o" is-link url="/pages/question/question"/>
+			<van-cell title="意见反馈" icon="smile-o" is-link url="/pages/feedback/feedback" />
 		</van-cell-group>
 	</view>
 </view>

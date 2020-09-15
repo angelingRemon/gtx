@@ -1,5 +1,6 @@
 /**app.wxss**/
 /* ColorUi */
+@import "colorui/animation.wxss";
 @import "colorui/main.wxss";
 @import "colorui/icon.wxss";
 @import "common/font.wxss"; 

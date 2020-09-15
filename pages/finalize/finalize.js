@@ -64,5 +64,8 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  goToOrderDetailTap(){
+    app.Tools.goTo('/pages/ordersDetail/ordersDetail','nav');
   }
 })

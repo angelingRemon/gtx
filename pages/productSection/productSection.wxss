@@ -1,0 +1,90 @@
+/* pages/productSection/productSection.wxss */
+
+page {
+  background: #fff;
+}
+
+.hotProductMain image {
+  width: 80rpx;
+  height: 80rpx;
+  display: block;
+  margin: 0 auto;
+}
+
+.hotProductMain .cu-list.grid.no-border {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.bannerMain {
+  padding: 0 25rpx;
+}
+
+.bannerMain .screen-swiper {
+  min-height: 171rpx !important;
+  height: 171rpx !important;
+}
+
+.bannerMain .screen-swiper image {
+  display: block;
+}
+
+.titleMain {
+  padding: 30rpx 20rpx 0;
+}
+
+.titleMain > text {
+  position: relative;
+  font-size: 28rpx;
+  color: #313131;
+  font-weight: bold;
+  padding-left: 15rpx;
+}
+
+.titleMain > text::before {
+  content: "";
+  display: block;
+  width: 6rpx;
+  height: 28rpx;
+  background: #e23308;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -14rpx;
+}
+
+.hotSearchBox {
+  padding: 30rpx 20rpx 0;
+  overflow: hidden;
+}
+
+.hotSearchBox view {
+  width: 22%;
+  margin-right: 4%;
+  float: left;
+  text-align: center;
+  height: 56rpx;
+  background: #e5e5e5;
+  line-height: 56rpx;
+  color: #5e5e5e;
+  font-size: 24rpx;
+  margin-bottom: 20rpx;
+}
+
+.classname {
+  font-weight: bold;
+  color: #5e5e5e;
+}
+.hotSearchBox view:nth-of-type(4n){
+    margin-right: 0;
+}
+.viewMoreBox{
+  padding:0 20rpx;
+}
+.viewMoreBox view{
+  height:70rpx;
+  line-height:70rpx;
+}
+.productSectionMain{
+  padding-bottom:30rpx;
+}

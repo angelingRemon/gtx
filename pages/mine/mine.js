@@ -73,5 +73,14 @@ Page({
   },
   goToWalletTap: function(){
     app.Tools.goTo('/pages/wallet/wallet','nav');
+  },
+  goToWalletTap(){
+    app.Tools.goTo('/pages/wallet/wallet', 'nav');
+  },
+  goToMyTeamTap() {
+    app.Tools.goTo('/pages/myTeam/myTeam', 'nav');
+  },
+  goToMyClientTap(){
+    app.Tools.goTo('/pages/myClient/myClient', 'nav');
   }
 })

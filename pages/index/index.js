@@ -7,13 +7,13 @@ Page({
     cardCur: 0,
     swiperList: [{
       id: 0,
-      url: '../../assets/images/bannerImg.jpg'
+      url: 'http://wechat.nmyd168.com/thsw/static/images/banner01.jpg'
     }, {
       id: 1,
-      url: '../../assets/images/bannerImg.jpg',
+      url: 'http://wechat.nmyd168.com/thsw/static/images/banner02.jpg',
       }, {
         id: 2,
-        url: '../../assets/images/bannerImg.jpg',
+        url: 'http://wechat.nmyd168.com/thsw/static/images/banner03.jpg',
       }],
   },
 
@@ -41,8 +41,8 @@ Page({
   goToMakeModeTap:function(){
     app.Tools.goTo('/pages/makeMode/makeMode','nav');
   },
-  goToClassifyTap:function(){
-    app.Tools.goTo('/pages/classify/classify','nav');
+  goToProductSectionTap:function(){
+    app.Tools.goTo('/pages/productSection/productSection','nav');
   },
   goToServiceTap:function(){
     app.Tools.goTo('/pages/serviceMode/serviceMode','nav');

@@ -1,4 +1,5 @@
 // pages/serviceMode/serviceMode.js
+const app = getApp();
 Page({
 
   /**
@@ -62,5 +63,8 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  goToSbconServiceTap(){
+    app.Tools.goTo('/pages/serviceSbcon/serviceSbcon','nav');
   }
 })

@@ -1,0 +1,68 @@
+<!-- pages/invoice/invoice.wxml -->
+<view class="invoiceMain">
+  <view class="title">请选择发票类型</view>
+  <view class="invoiceWay flex align-center justify-around">
+    <view class="{{way == 1?'active':''}}" data-way="1" catchtap="makeWayTap">
+      <text>电子发票</text>
+      <text>最快30分钟开具</text>
+    </view>
+    <view class="{{way == 2?'active':''}}" data-way="2" catchtap="makeWayTap">
+      <text>纸质发票</text>
+      <text>预计5天内送达</text>
+    </view>
+  </view>
+  <view class="tip">电子发票与纸质发票具有相同的法律效力，可支持报销入账！</view>
+  <view class="title">发票详情</view>
+  <view class="fromMain">
+    <view class="invoiceType solid-bottom">
+      <van-radio-group value="{{ radio }}" bind:change="onChange" class='flex align-center justify-around'>
+        <van-radio name="1" icon-size="24px" checked-color="#e23308">企业单位</van-radio>
+        <van-radio name="2" icon-size="24px" checked-color="#e23308">个人/非企业单位</van-radio>
+      </van-radio-group>
+    </view>
+    <van-cell-group>
+      <van-field style="font-size:40rpx;font-weight:bold;" size="large" value="{{ 100.00 }}" label="开票金额" border="{{ true }}" readonly/>
+    </van-cell-group>
+    <view wx:if="{{radio == 1}}">
+      <van-cell-group>
+        <van-field value="{{ value }}" label="发票抬头" placeholder="请填写发票抬头" border="{{ true }}" bind:change="inputOnChange" />
+        <van-field value="{{ value }}" label="纳锐人识别号" placeholder="请填写纳税人识别号" border="{{ true }}" bind:change="inputOnChange" />
+      </van-cell-group>
+      <view class="moreInput">
+        <view class="headerTitle flex align-center justify-between">
+          <view>更多选填项
+            <text>单位地址、电话、开户银行及账号</text>
+          </view>
+          <view class="flex align-center" catchtap="inputShowTap">{{showText}}
+            <van-icon name="arrow-down" wx:if="{{!inputShow}}" />
+            <van-icon name="arrow-up" wx:else />
+          </view>
+        </view>
+        <view class="bodyInput" wx:if="{{inputShow}}">
+          <van-cell-group>
+            <van-field value="{{ value }}" label="注册地址" placeholder="请填写单位地址" border="{{ true }}" bind:change="inputOnChange" />
+            <van-field value="{{ value }}" label="注册电话" placeholder="请填写单位电话" border="{{ true }}" bind:change="inputOnChange" />
+            <van-field value="{{ value }}" label="开户银行" placeholder="请填写开户银行" border="{{ true }}" bind:change="inputOnChange" />
+            <van-field value="{{ value }}" label="银行账号" placeholder="请填写银行账号" border="{{ false }}" bind:change="inputOnChange" />
+          </van-cell-group>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{radio==2}}">
+      <van-cell-group>
+        <van-field value="{{ value }}" label="个人名称" placeholder="请填写'个人'或您的姓名" border="{{ true }}" bind:change="inputOnChange" />
+      </van-cell-group>
+    </view>
+  </view>
+  <view class="title">收票人信息</view>
+  <view class="infoMain">
+    <van-cell-group>
+      <van-field value="{{ value }}" label="收票人手机" placeholder="请填写收票人手机号码" border="{{ true }}" bind:change="inputOnChange" />
+      <van-field value="{{ value }}" wx:if="{{way==1}}" label="收票人邮箱" placeholder="请填写收票人邮箱地址" border="{{ true }}" bind:change="inputOnChange" />
+      <van-field value="{{ value }}" wx:if="{{way==2}}" label="详细地址" placeholder="请填写收票人详细地址" border="{{ true }}" bind:change="inputOnChange" />
+    </van-cell-group>
+  </view>
+  <view class="submitBtn">
+    <button class="cu-btn bg-red margin-tb-sm lg button-hover">提交</button>
+  </view>
+</view>

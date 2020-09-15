@@ -1,0 +1,118 @@
+/* pages/orders/orders.wxss */
+.ordersTab{
+    width:100%;
+    position: fixed;
+    left:0;
+    top:0;
+    padding-top:10rpx;
+    background:#f1f1f1;
+    z-index:999;
+}
+.ordersTab .cu-item text{
+   display:block;
+   line-height:30rpx;
+   padding:10rpx 0 15rpx;
+   font-size:38rpx;
+   color:#999;
+}
+.ordersTab .cu-item{
+    font-size:24rpx;
+    line-height:30rpx;
+    height:120rpx;
+    padding-top:20rpx;
+    color:#999;
+    margin:0 16rpx;
+}
+.ordersTab .nav .cu-item.cur{
+    color:#d81e06;
+    border:none;
+}
+.ordersTab .nav .cu-item.cur text{
+    color:#d81e06;
+}
+.ordersContent{
+    padding:140rpx 30rpx 30rpx;
+}
+.ordersItem{
+    background:#fff;
+    margin-bottom:20rpx;
+    padding:20rpx;
+}
+.orderHeader>text{
+    font-weight:bold;
+    font-size:32rpx;
+}
+.orderHeader>view{
+    font-size:28rpx;
+    color:#9a9a9a;
+    position: relative;
+    padding-right:30rpx;
+    color:#d81e06;
+    font-weight:bold;
+}
+.orderHeader>view:after{
+    content:"";
+    display: block;
+    width:10rpx;
+    height:10rpx;
+    border-right:2rpx solid #9a9a9a;
+    border-bottom:2rpx solid #9a9a9a;
+    transform: rotate(-45deg);
+    position:absolute;
+    right:10rpx;
+    top:50%;
+    margin-top:-7rpx;
+}
+.orderTime{
+    line-height:60rpx;
+    font-size:28rpx;
+    color:#9a9a9a;
+    padding-top:5rpx;
+}
+.orderTime text{
+    margin-right:10rpx;
+    color: #9a9a9a;
+}
+.info{
+    font-size:28rpx;
+}
+.info view{
+    padding-bottom:5rpx;
+    position: relative;
+    padding-left:42rpx;
+    line-height:40rpx;
+}
+.info view.green::before{
+    content:"";
+    display: block;
+    width:20rpx;
+    height:20rpx;
+    background:#44bfa3;
+    position: absolute;
+    left:6rpx;
+    top:50%;
+    margin-top:-12rpx;
+    border-radius:50%;
+}
+.info view.orange::before{
+    content:"";
+    display: block;
+    width:20rpx;
+    height:20rpx;
+    background:#fe9252;
+    position: absolute;
+    left:6rpx;
+    top:50%;
+    margin-top:-12rpx;
+    border-radius:50%;
+}
+.btn{
+  overflow:hidden;
+  padding-top:20rpx;
+}
+.btn button{
+  margin:0 !important;
+  width:auto !important;
+  float:right;
+  margin-left:20rpx !important;
+}

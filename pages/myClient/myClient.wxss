@@ -1,0 +1,99 @@
+/* pages/myClient/myClient.wxss */
+.myClientMain{
+  padding:30rpx;
+}
+.headerMain{
+  padding:40rpx 0;
+  background-color:#e23308;
+  border-radius:20rpx;
+}
+.headerMain>view text{
+  display:block;
+  color:#fff;
+}
+.headerMain view{
+  text-align:center;
+  width:100%;
+}
+.headerMain view text:first-of-type{
+  font-size:28rpx;
+}
+.headerMain view text:last-of-type{
+  font-size:50rpx;
+  color:#fff;
+  padding-top:20rpx;
+  font-weight:bold;
+}
+.tabBox{
+  padding-top:30rpx;
+}
+.tabBox>text{
+  font-size:36rpx;
+  font-weight:bold;
+  margin-right:20rpx;
+  position:relative;
+  display:block;
+  line-height:80rpx;
+}
+.tabBox>text.active::before{
+  content:"";
+  display:block;
+  width:80%;
+  height:8rpx;
+  background:#e23308;
+  position:absolute;
+  bottom:0;
+  left:50%;
+  margin-left:-40%;
+}
+.clientListBox{
+  padding-top:30rpx;
+}
+.clientItem{
+  background:#fff;
+  padding:30rpx;
+  margin-bottom:30rpx;
+  border-radius:20rpx;
+  overflow:hidden;
+  position:relative;
+}
+.clientItem>image{
+  width:100rpx;
+  height:100rpx;
+  display:block;
+  float:left;
+  margin-top:28rpx;
+  border-radius:50%;
+  overflow:hidden;
+}
+.clientItem>view{
+  padding-left:130rpx;
+}
+.clientItem>view text{
+  display:block;
+}
+.clientItem>view text.name{
+  font-size:38rpx;
+  font-weight:bold;
+  color:#333;
+  line-height:60rpx;
+}
+.clientItem>view text.phone{
+  font-size:28rpx;
+  color:#999;
+  line-height:40rpx;
+  padding-top:10rpx;
+}
+.clientItem>view text.time{
+  padding-top:5rpx;
+  font-size:28rpx;
+  color:#999;
+}
+.phoneIcon{
+  font-size:80rpx;
+  color:#e23308;
+  position:absolute;
+  right:30rpx;
+  top:50%;
+  margin-top:-40rpx;
+}

@@ -1,0 +1,24 @@
+<!--pages/invoiceList/invoiceList.wxml-->
+<view class="invoiceListMain">
+  <van-notice-bar class="van-notice-bar" color="#e23308" background="#fff" left-icon="info-o" text="如果需要合并发票，请到首页-客服部联系客服!" />
+  <view class="invoiceListBox">
+    <view class="invoiceItem" wx:for="{{[1,1,1]}}">
+      <view class="orderNum solid-bottom">订单编号：45465416545464564</view>
+      <view class="productInfo solid-bottom">
+        <view class="top flex align-center justify-between">
+          <text class="h3">X展架</text>
+          <text>数量:3</text>
+        </view>
+        <view class="sub">
+          <text>规格：60cm*120cm 普通展架</text>
+        </view>
+      </view>
+      <view class="moneyBox flex align-center justify-between">
+        <view>开票金额：
+          <text>100.00</text>
+        </view>
+        <button class="cu-btn round line-red" role="button" aria-disabled="false" catchtap="goToInvoiceTap">开具</button>
+      </view>
+    </view>
+  </view>
+</view>

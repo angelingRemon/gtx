@@ -1,4 +1,5 @@
 // pages/comfirm/comfirm.js
+const app = getApp();
 Page({
 
   /**
@@ -67,6 +68,12 @@ Page({
     console.log(event.detail);
   },
   goToDesign(){
-    app.Tools.goTo('/pages/design/design')
+    app.Tools.goTo('/pages/design/design','nav')
+  },
+  addAddressTap(){
+    app.Tools.goTo('/pages/selectAddress/selectAddress', 'nav')
+  },
+  paySuccessTap(){
+    app.Tools.goTo('/pages/paySuccess/paySuccess', 'red');
   }
 })

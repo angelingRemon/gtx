@@ -2,7 +2,7 @@
 <view class="finalizeCotainer">
 	<view class="finalizeListMain">
 		<view class="finalizeListBox">
-			<view class="finalizeListItem" wx:for="{{listArr}}">
+			<view class="finalizeListItem" wx:for="{{listArr}}" catchtap="goToOrderDetailTap">
 				<image src="../../assets/images/detailBannerImg.jpg" mode="widthFix"></image>
 				<view class="textBox">
 					<view class="title flex justify-between">

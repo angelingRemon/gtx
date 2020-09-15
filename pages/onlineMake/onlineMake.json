@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "线上制作",
+  "backgroundColor": "#eeeeee",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "van-search": "@vant/weapp/search/index"
+  }
+}

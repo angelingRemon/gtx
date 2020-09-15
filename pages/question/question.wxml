@@ -1,0 +1,24 @@
+<!--pages/question/question.wxml-->
+<view class="questionContainer">
+   <!-- 客服时间 -->
+   <view class=" serviceTimeMain">
+     <image src="../../assets/images/serviceImg.png"></image>
+     <text class="title">在线客服</text>
+     <view>
+        <text>客服服务时间：09：00 - 24：00</text>
+       <text>请在首页-客服部进行在线咨询！</text>
+     </view>
+   </view>
+   <!-- 常见问题 -->
+   <view class="serviceQuestionMain">
+     <text class="title">常见问题</text>
+     <view class="serviceQuestionBox">
+       <view class="serviceQuestionItem" wx:for="{{question}}" wx:key="index" data-index="{{index}}" catchtap="openAnswer">
+         <text style="color:{{item.status ? '#f33' : '#333'}};font-weight:{{item.status ? 'bold' : '400'}}">{{item.question}}</text> 
+         <view wx:if="{{item.status}}">
+           <view><text class="left">答：</text><text class="right" wx:for="{{item.answer}}" key="{{i}}" wx:for-item="items">{{items}}</text></view>
+         </view>
+       </view>
+     </view>
+   </view>
+</view>

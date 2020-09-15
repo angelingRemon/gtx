@@ -1,0 +1,71 @@
+/* pages/feedback/feedback.wxss */
+
+page {
+  background: #fff;
+}
+
+.feedbackMain {
+  padding: 30rpx;
+}
+
+.inputFileTitle {
+  height: 100rpx;
+}
+
+.inputFileTitle text {
+  font-size: 32rpx;
+  color: #333;
+  font-weight: bold;
+}
+
+.inputFiexText textarea {
+  width: 100%;
+  height: 200rpx;
+  font-size: 28rpx;
+  line-height: 38rpx;
+  text-align: justify;
+}
+
+.uploadImg {
+  padding-top: 30rpx;
+  overflow: hidden;
+}
+
+.imgItem {
+  width: 150rpx;
+  height: 150rpx;
+  float: left;
+  background: #f1f1f1;
+  margin-right: 20rpx;
+}
+
+.uploadImg>text {
+  float: left;
+  margin-top: 110rpx;
+}
+
+.contactView {
+  padding-top: 30rpx;
+}
+
+.contactView>text {
+  font-size: 32rpx;
+  color: #333;
+  font-weight: bold;
+  padding:30rpx 0 10rpx;
+  display:block;
+}
+.contactView>view{
+  height:100rpx;
+  line-height:100rpx;
+}
+.contactView>view input{
+  height:100rpx;
+  font-size:28rpx;
+}
+.btn{
+  padding-top:30rpx;
+}
+.btn button{
+  width:100% !important;
+}

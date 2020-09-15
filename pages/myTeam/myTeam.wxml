@@ -1,0 +1,63 @@
+<!--pages/myTeam/myTeam.wxml-->
+<view class="myTeamListMain">
+  <!-- 我的团队业绩 -->
+  <view class="myTeamPerformanceMain">
+    <text>我的团队业绩</text>
+    <view class="myTeamPerformanceBox">
+      <view class="myTeamPerformanceItem">
+        <text>直推人数(人)</text>
+        <text>3</text>
+        <view>昨日+0</view>
+      </view>
+      <view class="myTeamPerformanceItem">
+        <text>团队总人数(人)</text>
+        <text>12</text>
+        <view>昨日+0</view>
+      </view>
+      <view class="myTeamPerformanceItem">
+        <text>本月团队订单数(笔)</text>
+        <text>3</text>
+        <view>昨日+0</view>
+      </view>
+      <view class="myTeamPerformanceItem">
+        <text>本月团队总收益(元)</text>
+        <text>160</text>
+        <view>昨日+0</view>
+      </view>
+    </view>
+  </view>
+  <!-- 我的推荐人 -->
+  <view class="myReferrerMain">
+    <text>我的推荐人</text>
+    <view class="myReferrerBox">
+      <image src="../../assets/images/headerImg.jpg" mode="widthFix"></image>
+      <view>叨叨令</view>
+      <van-icon name="phone" size="30" class="icon"/>
+    </view>
+  </view>
+  <!-- 直推及下属团队 -->
+  <view class="directDriveMain">
+    <text>直推及下属团队</text>
+    <view class="directDriveBox">
+      <view class="directDriveItem" wx:for="{{[1,1,1]}}">
+        <view class="top flex align-center justify-between">
+          <view class="flex align-center">
+            <image src="../../assets/images/headerImg.jpg" mode="widthFix"></image>
+            <text>任勇强</text>
+          </view>
+          <van-icon name="phone" size="30" class="icon"/>
+        </view>
+        <view class="sub flex align-center justify-between">
+          <text>加入时间:2020-03-07</text>
+          <view class="flex align-center" catchtap="showOffTap">团队业绩<van-icon name="arrow-down" class="{{show?'rotate':''}}" /></view>
+        </view>
+        <view class="teamPerformanceBox" wx:if="{{show}}">
+          <view>直推人数：10人</view>
+          <view>团队总人数:20人</view>
+          <view>本月团队订单数：3笔</view>
+          <view>本月团队总收益：160元</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

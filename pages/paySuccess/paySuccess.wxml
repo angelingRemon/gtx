@@ -1,0 +1,9 @@
+<!--pages/paySuccess/paySuccess.wxml-->
+<view class="paySuccessMain">
+    <image src="../../assets/images/successStatusImg.jpg" mode="widthFix"></image>
+    <view class="subTip">
+        <view>订单支付成功 <text>￥102.00</text></view>
+        <view>恭喜您此次支付获得<text>10个点返现</text></view>
+    </view>
+    <view class="jumpDesign">正在匹配大神中<text>{{dot}}</text></view>
+</view>

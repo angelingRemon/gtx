@@ -1,0 +1,27 @@
+<!--pages/feedback/feedback.wxml-->
+<view class="feedbackMain">
+  <view class="inputFileBox">
+    <view class="inputFileTitle flex align-center justify-between">
+      <text>问题/意见描述</text>
+      <text>0/200</text>
+    </view>
+    <view class="inputFiexText">
+      <textarea placeholder="请填写10字以上的问题描述，以便我们更好地帮助您解决问题"></textarea>
+    </view>
+    <view class="uploadImg">
+      <view class="imgItem">
+        <image src="../../assets/images/addIcon.png" mode="widthFix"></image>
+      </view>
+      <text>上传问题截图，最多四张(选填)</text>
+    </view>
+  </view>
+  <view class="contactView">
+    <text>联系方式(选填)</text>
+    <view class="solid-bottom">
+       <input type="text" placeholder="填写您的手机号或邮箱，便于我们与您联系"></input>
+    </view>
+  </view>
+  <view class="btn">
+    <button class="cu-btn bg-red margin-tb-sm lg" role="button" aria-disabled="false">立即提交</button>
+  </view>
+</view>

@@ -1,0 +1,11 @@
+<!--pages/sbcon/sbcon.wxml-->
+<view class="sbconMain">
+  <view class="loadingText">稍等，客服妹子马上就到！</view>
+  <image src="../../assets/images/sericeLoading.gif" mode="widthFix"></image>
+  <view class="matchingText">
+    <view>正在呼叫客服妹子<text>{{dot}}</text></view>
+  </view>
+  <view class="btnMain flex justify-center">
+   <button class="cu-btn round bg-gray" role="button"aria-disabled="false">取消呼叫</button>
+  </view>
+</view>

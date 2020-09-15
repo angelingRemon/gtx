@@ -1,0 +1,34 @@
+/* pages/incomeExpensesDetail/incomeExpensesDetail.wxss */
+page{
+  background:#fff;
+}
+.incomeListBox,.expensesListBox{
+  padding-left:30rpx;
+}
+.incomeItem,.expensesItem{
+  padding:25rpx 30rpx 25rpx 0;
+  line-height:50rpx;
+}
+.top>text{
+  font-weight:bold;
+  font-size:34rpx;
+}
+.incomeItem .top>view{
+  font-size:40rpx;
+  color:#e23308;
+  font-weight:bold;
+}
+.sub>text{
+  color:#999;
+}
+.expensesItem .top>view{
+  font-size:40rpx;
+  color:green;
+  font-weight:bold;
+}
+.expensesItem .sub>view.red{
+  color:#e23308;
+}
+.expensesItem .sub>view.green{
+  color:green;
+}

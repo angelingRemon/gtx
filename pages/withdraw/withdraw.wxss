@@ -1,0 +1,76 @@
+/* pages/withdraw/withdraw.wxss */
+.moneyBox{
+  text-align:center;
+  padding:50rpx 0;
+}
+.moneyBox text{
+  font-size:32rpx;
+}
+.moneyBox view{
+  font-size:80rpx;
+  font-weight:bold;
+  padding-top:10rpx;
+}
+.moneyBox view text{
+  font-size:32rpx;
+  padding-left:10rpx;
+  position:relative;
+  top:-4rpx;
+}
+.inputBox{
+  background:#fff;
+  padding:30rpx;
+  width:90%;
+  margin:0 auto;
+  border-radius:10rpx;
+  box-sizing:border-box;
+}
+.inputBox>text{
+  display:block;
+  text-align:center;
+  padding-top:10rpx;
+  font-size:32rpx;
+}
+.input{
+  overflow:hidden;
+  padding:20rpx 0;
+}
+.input image{
+  width:60rpx;
+  height:60rpx;
+  display:block;
+  float:left;
+  margin-top:28rpx;
+}
+.inputPls{
+  font-size:32rpx;
+}
+.input input{
+  width:300rpx;
+  float:left;
+  height:120rpx;
+  font-size:60rpx;
+  margin-left:20rpx;
+  font-weight:bold;
+}
+.input button{
+  float:right;
+  width:184rpx !important;
+  height:60rpx !important;
+  line-height:60rpx !important;
+  margin-top:32rpx;
+}
+.tip{
+  font-size:28rpx;
+  line-height:36rpx;
+  color:#999;
+  text-align:justify;
+}
+.btn{
+  padding:40rpx 0;
+  width:90%;
+  margin:0 auto;
+}
+.btn button{
+  width:100% !important;
+}

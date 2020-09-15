@@ -5,13 +5,13 @@
         <view class="myWalletBox">
             <view class="number">
                 <image src="../../assets/images/myWalletBg1.png" mode="widthFix"></image>
-                <text>我的钱包</text>
+                <text>可提现金额</text>
                 <text>423.00</text>
             </view>
             <view class="Menu">
                 <van-cell-group>
-                    <van-cell is-link title="提现余额" link-type="navigateTo" url="" />
-                    <van-cell is-link title="收支明细" link-type="navigateTo" url="" />
+                    <van-cell is-link title="余额提现" link-type="navigateTo" url="/pages/withdraw/withdraw" />
+                    <van-cell is-link title="收支明细" link-type="navigateTo" url="/pages/incomeExpensesDetail/incomeExpensesDetail" />
                 </van-cell-group>
             </view>
         </view>
@@ -21,13 +21,13 @@
         <view class="myWalletBox">
             <view class="number">
                 <image src="../../assets/images/myWalletBg2.png" mode="widthFix"></image>
-                <text>我的发票</text>
-                <text>423.00</text>
+                <text>待开发票总金额</text>
+                <text>300.00</text>
             </view>
             <view class="Menu">
                 <van-cell-group>
-                    <van-cell is-link title="我的发票" link-type="navigateTo" url="" />
-                    <van-cell is-link title="代办发票" link-type="navigateTo" url="" />
+                    <!-- <van-cell is-link title="我的发票" link-type="navigateTo" url="" /> -->
+                    <van-cell is-link title="待开发票" link-type="navigateTo" url="/pages/invoiceList/invoiceList" />
                 </van-cell-group>
             </view>
         </view>

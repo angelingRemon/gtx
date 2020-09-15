@@ -57,7 +57,7 @@ page,.main{
     line-height: 30rpx;
     padding:30rpx 0 55rpx;
     text-align: center;
-    color: #2b95ff;
+    color: #e23308;
     font-size: 28rpx;
 }
 .cate-title::before{
@@ -67,7 +67,7 @@ page,.main{
     content: '';
     width: 70rpx;
     height: 4rpx;
-    background: #2b95ff;
+    background: #e23308;
 }
 .cate-title::after{
     position: absolute;
@@ -76,7 +76,7 @@ page,.main{
     content: '';
     width: 70rpx;
     height: 4rpx;
-    background: #2b95ff;
+    background: #e23308;
 }
 
 .product-list{
