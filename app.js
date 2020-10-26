@@ -23,21 +23,20 @@ App({
     // 登录
     wx.login({
       success: res => {
-        return;
         wx.request({
-          url: 'https://apidskj.nmyd168.com/Home/Frontend/login/login',
+          url: 'https://api.gtxgzs.com/api/client',
           data: {
-            code: res.code,
-            flag: "Employee"
+            code: res.code
           },
           success: function (data) {
+            console.log(data);
             if (data.data.status == 200) {
               that.gbData.checkLogin = true;
               //获取到用户凭证 存儲 3rd_session 
-              wx.setStorageSync('third_session', data.data.result.third_session)
-              if (that.checkLoginReadyCallback) {
-                that.checkLoginReadyCallback(data.data);
-              }
+              // wx.setStorageSync('third_session', data.data.result.third_session)
+              // if (that.checkLoginReadyCallback) {
+              //   that.checkLoginReadyCallback(data.data);
+              // }
             } else {
               app.Tools.toast('系统升级中')
             }
