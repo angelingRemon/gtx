@@ -102,10 +102,11 @@ class ServiceBase {
         //数据加密
         // let sendData = this.encrypt.encrypt(request.data)
         request.header = request.header || {}
-        // let access_token = wx.getStorageSync('access_token')
-        // if (access_token !== undefined) {
-        //   request.headers.Authorization = "Bearer " + access_token
-        // }
+        let access_token = wx.getStorageSync('access_token')
+        if (access_token !== undefined) {
+          request.header['Authorization'] = "Bearer " + access_token  
+        }
+        console.log(request)
         // request.data = sendData
         request.data = request.data
         if (request.showLoading) {
@@ -130,6 +131,7 @@ class ServiceBase {
         // return JSON.parse(responseStr.substr(0, responseStr.lastIndexOf('}') + 1))
       },
       responseError: (responseError) => {
+        console.log(responseError)
         wx.hideLoading()
         return responseError
       },

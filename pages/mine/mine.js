@@ -14,7 +14,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getUserInfo()
   },
 
   /**
@@ -82,5 +82,14 @@ Page({
   },
   goToMyClientTap(){
     app.Tools.goTo('/pages/myClient/myClient', 'nav');
+  },
+  getUserInfo(){
+    let params = {
+      url:'users',
+      method:'get'
+    }
+    app.HttpServiceVpos.sendRequest(params).then(res=>{
+      console.log(res)
+    })
   }
 })

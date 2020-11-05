@@ -1,335 +1,335 @@
 {
-  "description": "项目配置文件",
-  "packOptions": {
-    "ignore": []
-  },
-  "setting": {
-    "urlCheck": true,
-    "es6": true,
-    "enhance": false,
-    "postcss": true,
-    "preloadBackgroundData": false,
-    "minified": true,
-    "newFeature": false,
-    "coverView": true,
-    "nodeModules": true,
-    "autoAudits": false,
-    "showShadowRootInWxmlPanel": true,
-    "scopeDataCheck": false,
-    "uglifyFileName": false,
-    "checkInvalidKey": true,
-    "checkSiteMap": false,
-    "uploadWithSourceMap": true,
-    "compileHotReLoad": false,
-    "useMultiFrameRuntime": false,
-    "useApiHook": true,
-    "babelSetting": {
-      "ignore": [],
-      "disablePlugins": [],
-      "outputPath": ""
-    },
-    "useIsolateContext": true,
-    "useCompilerModule": false,
-    "userConfirmedUseCompilerModuleSwitch": false,
-    "packNpmManually": false,
-    "packNpmRelationList": [],
-    "minifyWXSS": true
-  },
-  "compileType": "miniprogram",
-  "libVersion": "2.12.0",
-  "appid": "wx97e92996d22d1c1d",
-  "projectname": "%E5%91%8A%E5%A4%A9%E4%B8%8B",
-  "debugOptions": {
-    "hidedInDevtools": []
-  },
-  "scripts": {},
-  "isGameTourist": false,
-  "simulatorType": "wechat",
-  "simulatorPluginLibVersion": {},
-  "condition": {
-    "plugin": {
-      "list": []
-    },
-    "game": {
-      "list": []
-    },
-    "gamePlugin": {
-      "list": []
-    },
-    "miniprogram": {
-      "list": [
-        {
-          "id": -1,
-          "name": "pages/classify/classify",
-          "pathName": "pages/classify/classify",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/mine/mine",
-          "pathName": "pages/mine/mine",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/index/index",
-          "pathName": "pages/index/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/designMode/designMode",
-          "pathName": "pages/designMode/designMode",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/finalize/finalize",
-          "pathName": "pages/finalize/finalize",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/detail/detail",
-          "pathName": "pages/detail/detail",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/finalize/finalize",
-          "pathName": "pages/finalize/finalize",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/share/share",
-          "pathName": "pages/share/share",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/index/index",
-          "pathName": "pages/index/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/wallet/wallet",
-          "pathName": "pages/wallet/wallet",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/comfirm/comfirm",
-          "pathName": "pages/comfirm/comfirm",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/design/design",
-          "pathName": "pages/design/design",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/orders/orders",
-          "pathName": "pages/orders/orders",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/index/index",
-          "pathName": "pages/index/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/ordersDetail/ordersDetail",
-          "pathName": "pages/ordersDetail/ordersDetail",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/orders/orders",
-          "pathName": "pages/orders/orders",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/onlineMake/onlineMake",
-          "pathName": "pages/onlineMake/onlineMake",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/address/address",
-          "pathName": "pages/address/address",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/editAddress/editAddress",
-          "pathName": "pages/editAddress/editAddress",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/productSection/productSection",
-          "pathName": "pages/productSection/productSection",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/productSection/productSection",
-          "pathName": "pages/productSection/productSection",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/onlineMake/onlineMake",
-          "pathName": "pages/onlineMake/onlineMake",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/sbcon/sbcon",
-          "pathName": "pages/sbcon/sbcon",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/sbcon/sbcon",
-          "pathName": "pages/sbcon/sbcon",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/sbcon/sbconSuccess/sbconSucess",
-          "pathName": "pages/sbcon/sbconSuccess/sbconSucess",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/paySuccess/paySuccess",
-          "pathName": "pages/paySuccess/paySuccess",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/detail/detail",
-          "pathName": "pages/detail/detail",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/invoice/invoice",
-          "pathName": "pages/invoice/invoice",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/invoice/invoice",
-          "pathName": "pages/invoice/invoice",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/detail/detail",
-          "pathName": "pages/detail/detail",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/selectAddress/selectAddress",
-          "pathName": "pages/selectAddress/selectAddress",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/comfirm/comfirm",
-          "pathName": "pages/comfirm/comfirm",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/detail/detail",
-          "pathName": "pages/detail/detail",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/invoiceList/invoiceList",
-          "pathName": "pages/invoiceList/invoiceList",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/ordersDetail/onlineOrdersDetail/onlineOrdersDetail",
-          "pathName": "pages/ordersDetail/onlineOrdersDetail/onlineOrdersDetail",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/ordersDetail/hasdraftOrderDetail/hasdraftOrderDetail",
-          "pathName": "pages/ordersDetail/hasdraftOrderDetail/hasdraftOrderDetail",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/invoiceList/invoiceList",
-          "pathName": "pages/invoiceList/invoiceList",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/invoice/invoice",
-          "pathName": "pages/invoice/invoice",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/orders/orders",
-          "pathName": "pages/orders/orders",
-          "scene": null
-        }
-      ]
-    }
-  }
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"enhance": false,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": false,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"uglifyFileName": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": false,
+		"uploadWithSourceMap": true,
+		"compileHotReLoad": false,
+		"useMultiFrameRuntime": false,
+		"useApiHook": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useIsolateContext": true,
+		"useCompilerModule": false,
+		"userConfirmedUseCompilerModuleSwitch": false,
+		"packNpmManually": false,
+		"packNpmRelationList": [],
+		"minifyWXSS": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.12.0",
+	"appid": "wx97e92996d22d1c1d",
+	"projectname": "%E5%91%8A%E5%A4%A9%E4%B8%8B",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"scripts": {},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"plugin": {
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"list": []
+		},
+		"miniprogram": {
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/classify/classify",
+					"pathName": "pages/classify/classify",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mine/mine",
+					"pathName": "pages/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/designMode/designMode",
+					"pathName": "pages/designMode/designMode",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/finalize/finalize",
+					"pathName": "pages/finalize/finalize",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/detail/detail",
+					"pathName": "pages/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/finalize/finalize",
+					"pathName": "pages/finalize/finalize",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/share/share",
+					"pathName": "pages/share/share",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wallet/wallet",
+					"pathName": "pages/wallet/wallet",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/comfirm/comfirm",
+					"pathName": "pages/comfirm/comfirm",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/design/design",
+					"pathName": "pages/design/design",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/orders/orders",
+					"pathName": "pages/orders/orders",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/ordersDetail/ordersDetail",
+					"pathName": "pages/ordersDetail/ordersDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/orders/orders",
+					"pathName": "pages/orders/orders",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/onlineMake/onlineMake",
+					"pathName": "pages/onlineMake/onlineMake",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/address/address",
+					"pathName": "pages/address/address",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/editAddress/editAddress",
+					"pathName": "pages/editAddress/editAddress",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/productSection/productSection",
+					"pathName": "pages/productSection/productSection",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/productSection/productSection",
+					"pathName": "pages/productSection/productSection",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/onlineMake/onlineMake",
+					"pathName": "pages/onlineMake/onlineMake",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/sbcon/sbcon",
+					"pathName": "pages/sbcon/sbcon",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/sbcon/sbcon",
+					"pathName": "pages/sbcon/sbcon",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/sbcon/sbconSuccess/sbconSucess",
+					"pathName": "pages/sbcon/sbconSuccess/sbconSucess",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/paySuccess/paySuccess",
+					"pathName": "pages/paySuccess/paySuccess",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/detail/detail",
+					"pathName": "pages/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/invoice/invoice",
+					"pathName": "pages/invoice/invoice",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/invoice/invoice",
+					"pathName": "pages/invoice/invoice",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/detail/detail",
+					"pathName": "pages/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/selectAddress/selectAddress",
+					"pathName": "pages/selectAddress/selectAddress",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/comfirm/comfirm",
+					"pathName": "pages/comfirm/comfirm",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/detail/detail",
+					"pathName": "pages/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/invoiceList/invoiceList",
+					"pathName": "pages/invoiceList/invoiceList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/ordersDetail/onlineOrdersDetail/onlineOrdersDetail",
+					"pathName": "pages/ordersDetail/onlineOrdersDetail/onlineOrdersDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/ordersDetail/hasdraftOrderDetail/hasdraftOrderDetail",
+					"pathName": "pages/ordersDetail/hasdraftOrderDetail/hasdraftOrderDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/invoiceList/invoiceList",
+					"pathName": "pages/invoiceList/invoiceList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/invoice/invoice",
+					"pathName": "pages/invoice/invoice",
+					"query": "",
+					"scene": null
+				},
+				{
+					"name": "pages/orders/orders",
+					"pathName": "pages/orders/orders",
+					"scene": null
+				}
+			]
+		}
+	}
 }
