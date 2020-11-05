@@ -26,7 +26,7 @@
       </scroll-view>
     </view>
     <view class="ordersContent">
-      <view class="ordersItem" wx:for="{{[1,1]}}">
+      <view class="ordersItem" wx:for="{{[1,1]}}" wx:key="index">
         <view class="orderHeader flex align-center justify-between" catchtap="goToDetail">
           <text>X展架</text>
           <view>已完成</view>
@@ -47,7 +47,7 @@
           <button class="cu-btn round line-red" role="button" aria-disabled="false">定稿</button>
         </view>
       </view>
-      <view class="ordersItem" wx:for="{{[1,1]}}" catchtap="goToOnlineDetail">
+      <view class="ordersItem" wx:for="{{[1,1]}}" wx:key="index" catchtap="goToOnlineDetail">
         <view class="orderHeader flex align-center justify-between">
           <text>易拉宝</text>
           <view>已完成</view>
@@ -61,7 +61,7 @@
           <view class="orange">广告展架 60*160 80*180cm</view>
         </view>
       </view>
-      <view class="ordersItem" wx:for="{{[1,1]}}" catchtap="goToHasdraftDetail">
+      <view class="ordersItem" wx:for="{{[1,1]}}" wx:key="index" catchtap="goToHasdraftDetail">
         <view class="orderHeader flex align-center justify-between">
           <text>有稿制作-易拉宝</text>
           <view>已完成</view>

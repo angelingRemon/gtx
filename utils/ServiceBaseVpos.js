@@ -10,7 +10,7 @@ class ServiceBase {
    * 发送请求
    */
   sendRequest(config) {
-    config.data['platform_id'] = 3
+    // config.data['platform_id'] = 3
     // 注入拦截器
     const chainInterceptors = (promise, interceptors) => {
       for (let i = 0, ii = interceptors.length; i < ii;) {
@@ -96,12 +96,16 @@ class ServiceBase {
   setInterceptors() {
     return [{
       request: (request) => {
-        request.data.key = __config.key
-        request.data.from_client = "12"
+        // request.data.key = __config.key
+        // request.data.from_client = "12"
         // request.data.platform_id = 3
         //数据加密
         // let sendData = this.encrypt.encrypt(request.data)
         request.header = request.header || {}
+        // let access_token = wx.getStorageSync('access_token')
+        // if (access_token !== undefined) {
+        //   request.headers.Authorization = "Bearer " + access_token
+        // }
         // request.data = sendData
         request.data = request.data
         if (request.showLoading) {

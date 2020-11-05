@@ -7,6 +7,7 @@ App({
   HttpServiceVpos: new HttpServiceVpos,
   Tools: new Tools,
   onLaunch: function () {
+    var that = this;
     //colorUI相关
     wx.getSystemInfo({
       success: e => {
@@ -24,21 +25,24 @@ App({
     wx.login({
       success: res => {
         wx.request({
-          url: 'https://api.gtxgzs.com/api/client',
+          url: 'https://api.gtxgzs.com/api/client/login',
           data: {
             code: res.code
           },
+          method:"POST",
           success: function (data) {
-            console.log(data);
-            if (data.data.status == 200) {
+            if (data.statusCode == 200) {
               that.gbData.checkLogin = true;
-              //获取到用户凭证 存儲 3rd_session 
-              // wx.setStorageSync('third_session', data.data.result.third_session)
-              // if (that.checkLoginReadyCallback) {
-              //   that.checkLoginReadyCallback(data.data);
-              // }
+              //获取到用户凭证 存儲 access_token 
+              wx.setStorageSync('access_token', data.data.access_token)
+              if (that.checkLoginReadyCallback) {
+                that.checkLoginReadyCallback(data.data);
+              }
             } else {
-              app.Tools.toast('系统升级中')
+              wx.showToast({
+                icon: 'none',
+                title: '系统升级中',
+              })
             }
           },
           fail: function (res) {
@@ -48,7 +52,8 @@ App({
       }
     })
   },
-  globalData: {
+  gbData: {
+    checkLogin:false,
     userInfo: null
   },
   globalData: {

@@ -13,7 +13,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getOrdersList();
   },
 
   /**
@@ -80,5 +80,14 @@ Page({
   },
   goToHasdraftDetail(){
     app.Tools.goTo('/pages/ordersDetail/hasdraftOrderDetail/hasdraftOrderDetail', 'nav'); 
-  }
+  },
+  getOrdersList: function() {
+    let params = {
+      order_no:"201022841059945701",
+      status:1
+    }
+    app.HttpServiceVpos.orders(params).then(data => {
+        console.log(data);
+    })
+  },
 })

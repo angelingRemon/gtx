@@ -4,13 +4,14 @@ class Service extends ServiceBase {
   constructor() {
     super()
     this.path = {
-      initUserInfo: 'Euser/initUserInfo',  // 初始化用户信息
+      orders: 'orders',  // 订单列表
     }
   }
-  initUserInfo(params) {
+  orders(params) {
     return this.sendRequest({
-      url: this.path.initUserInfo,
-      data: params
+      url: this.path.orders,
+      data: params,
+      method:"GET"
     })
   }
 }
